@@ -62,10 +62,14 @@
           <ul
             class="desktopNav header-Nav mb-0 list-unstyled d-flex align-items-center gap-5"
           >
-            <li><a href="#top">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a data-lang-en="Home" data-lang-fr="Acceuil" 
+                data-lang-pt="Inicio" href="#top">Home</a></li>
+            <li><a data-lang-en="Services" data-lang-fr="Services" 
+                data-lang-pt="Serviços" href="#services">Services</a></li>
+            <li><a data-lang-en="About Us" data-lang-fr="A propos" 
+                data-lang-pt="Sobre nos" href="#about">About Us</a></li>
+            <li><a data-lang-en="Contact Us" data-lang-fr="Contactez-nous" 
+                data-lang-pt="Fala Connosco" href="#contact">Contact Us</a></li>
           </ul>
 
           <!-- Social media -->
@@ -76,12 +80,27 @@
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
+          <div class="lang-menu">
+              <button id="lang-en" class="lang-button">
+                  <img src="assets/images/languages/english-flag.svg" alt="English" class="flag-icon">
+              </button>
+              <button id="lang-fr" class="lang-button">
+                  <img src="assets/images/languages/french-flag.svg" alt="Français" class="flag-icon">
+              </button>
+              <button id="lang-pt" class="lang-button">
+                  <img src="assets/images/languages/pt-flag.svg" alt="Português" class="flag-icon">
+              </button>
+          </div>
         </nav>
 
         <!-- Hero section -->
         <section class="barsa-hero py-5 padding-y-80 pb-0">
           <div class="container">
-            <h1 class="barsa-h1 text-center">Web Digital Agency</h1>
+            <h1 class="barsa-h1 text-center" 
+                data-lang-en="Web Digital Agency" data-lang-fr="Agence Web Digitale" 
+                data-lang-pt="Agencia Web">
+                Web Digital Agency
+            </h1>
             <p class="barsa-desc text-center w-75 mx-auto">
               We develop the relationships that underpin the next phase in your
               organisation's growth. We do this by discerning the We develop the
@@ -193,8 +212,8 @@
                   </div>
                   <div class="sm-70 col-md-9 col-sm-7">
                     <article>
-                      <h4 class="barsa-h4">Data Solutions</h4>
-                      <p class="barsa-desc m-0 small">Organization Growth</p>
+                      <h4 class="barsa-h4">Web Creation</h4>
+                      <p class="barsa-desc m-0 small">Website, e-commerce</p>
                     </article>
                   </div>
                 </div>
@@ -212,8 +231,8 @@
                   </div>
                   <div class="sm-70 col-md-9 col-sm-7">
                     <article>
-                      <h4 class="barsa-h4">lifetime updates.</h4>
-                      <p class="barsa-desc m-0 small">Organization Growth</p>
+                      <h4 class="barsa-h4">Design</h4>
+                      <p class="barsa-desc m-0 small">Logo, Branding, Web design</p>
                     </article>
                   </div>
                 </div>
@@ -231,8 +250,8 @@
                   </div>
                   <div class="sm-70 col-md-9 col-sm-7">
                     <article>
-                      <h4 class="barsa-h4">Business Analysis</h4>
-                      <p class="barsa-desc m-0 small">Organization Growth</p>
+                      <h4 class="barsa-h4">Business Growth</h4>
+                      <p class="barsa-desc m-0 small">Copywriting, Social Media, Marketing</p>
                     </article>
                   </div>
                 </div>
@@ -255,51 +274,51 @@
             </div>
             <div class="col-md-6 ps-4 position-relative z-3">
               <h2 class="barsa-h2 dark">
-                Making Your Business Unique Consulting
+                Making Your Business Unique
               </h2>
 
               <ul class="barsa-list2 my-4 row list-unstyled">
-                <li class="col-md-6">
+                <li class="col-md-12">
                   <img
                     src="assets/images/about/listImages/l1.png"
                     alt="About List"
                   />
-                  Fully managed
+                  Awesome website for better visibility
                 </li>
-                <li class="col-md-6">
+                <li class="col-md-12">
                   <img
                     src="assets/images/about/listImages/l4.png"
                     alt="About List"
                   />
-                  Ultimate speed
+                  Top 10 on Google 
                 </li>
-                <li class="col-md-6">
+                <li class="col-md-12">
                   <img
                     src="assets/images/about/listImages/l2.png"
                     alt="About List"
                   />
-                  Secure like Fort Knox
+                  Focus on your business
                 </li>
-                <li class="col-md-6">
+                <li class="col-md-12">
                   <img
                     src="assets/images/about/listImages/l5.png"
                     alt="About List"
                   />
-                  Daily backup
+                  Lower hiring costs and risks
                 </li>
-                <li class="col-md-6">
+                <li class="col-md-12">
                   <img
                     src="assets/images/about/listImages/l3.png"
                     alt="About List"
                   />
-                  Free migrations
+                  Monthly maintenance available
                 </li>
-                <li class="col-md-6">
+                <li class="col-md-12">
                   <img
                     src="assets/images/about/listImages/l6.png"
                     alt="About List"
                   />
-                  Google Cloud Platform
+                  100% remote, no travel costs
                 </li>
               </ul>
             </div>
@@ -691,72 +710,43 @@
         </div>
       </footer>
 
-      <!-- Popup 
-      <div class="popUpmain">
-        <div class="container position-relative">
-          <div class="popWrapper">
-            <div class="row align-items-center">
-              <div class="col-md-7">
-                <div class="popInner">
-                  <aritcle class="popTxt">
-                    <h2>Get Exclusive Access My Freebie Library</h2>
-                    <p>Subscribning to our Newsletter has many benefits</p>
-                  </aritcle>
+    <!-- Internationalization script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const defaultLang = 'en';
+            const userLang = navigator.language || navigator.userLanguage;
+            const lang = userLang.startsWith('fr') ? 'fr' : userLang.startsWith('pt') ? 'pt' : defaultLang;
 
-                  <ul class="popList">
-                    <li>
-                      <i class="fa-solid fa-circle-check"></i>Get access to free
-                      resources
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-circle-check"></i>Exclusive Freebies
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-circle-check"></i>Great Exclusive
-                      offers
-                    </li>
+            const langButtons = {
+                'en': document.getElementById('lang-en'),
+                'fr': document.getElementById('lang-fr'),
+                'pt': document.getElementById('lang-pt')
+            };
 
-                    <div class="ulBG"></div>
-                  </ul>
+            function setLanguage(lang) {
+                document.querySelectorAll('[data-lang-en]').forEach(element => {
+                    element.textContent = element.getAttribute(`data-lang-${lang}`);
+                });
 
-                  <form class="contact">
-                    <div class="textField">
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="Enter Your Name"
-                      />
-                      <i class="fa-solid fa-user"></i>
-                    </div>
-                    <div class="textField">
-                      <input
-                        type="email"
-                        name="email"
-                        placeholder="Enter Your Email"
-                      />
-                      <i class="fa-solid fa-envelope"></i>
-                    </div>
+                // Disable the current language button and enable others
+                for (let key in langButtons) {
+                    if (key === lang) {
+                        langButtons[key].classList.add('disabled');
+                        langButtons[key].setAttribute('disabled', 'disabled');
+                    } else {
+                        langButtons[key].classList.remove('disabled');
+                        langButtons[key].removeAttribute('disabled');
+                    }
+                }
+            }
 
-                    <span class="warning"
-                      >No spam Ever, Unsubscibe Any time.</span
-                    >
-                  </form>
-                </div>
-              </div>
+            setLanguage(lang); // Set the initial language based on browser settings
 
-              <div class="col-md-5">
-                <aside>
-                  <img src="assets/images/popup/email.png" alt="email" />
-                  <button class="apply">Yes Please!</button>
-                </aside>
-              </div>
-            </div>
-
-            <button class="popClose">X</button>
-          </div>
-        </div>
-      </div>-->
-    </div>
+            langButtons['en'].addEventListener('click', () => setLanguage('en'));
+            langButtons['fr'].addEventListener('click', () => setLanguage('fr'));
+            langButtons['pt'].addEventListener('click', () => setLanguage('pt'));
+        });
+    </script>
 
     <!-- error -->
     <div id="error"></div>
