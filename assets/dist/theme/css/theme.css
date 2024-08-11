@@ -1092,7 +1092,6 @@ a {
 
 footer {
 	width: 100%;
-	min-height: 50vh;
 	background-color: var(--footer-bg);
 	position: relative;
 }
