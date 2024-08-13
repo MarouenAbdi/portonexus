@@ -4,783 +4,744 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porto Nexus</title>
-
     <!-- Swiper styles -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+      />
     <!-- Shader Effect styles -->
     <link
       rel="stylesheet"
       href="assets/dist/lib/swiperSlider/swiper-gl.min.css"
-    />
-
+      />
     <!-- font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-
+      />
     <!-- Bootstrap -->
     <link
       rel="stylesheet"
       href="assets/dist/framework/bootstrap/css/bootstrap.min.css"
-    />
-
+      />
     <!-- Theme Files -->
     <link rel="stylesheet" href="assets/dist/theme/css/color.css" />
     <link rel="stylesheet" href="assets/dist/theme/css/theme.css" />
     <link rel="stylesheet" href="assets/dist/theme/css/responsive.css" />
     <link rel="stylesheet" href="assets/dist/theme/css/animation.css" />
-
     <!-- pop up -->
     <link rel="stylesheet" href="assets/dist/theme/css/popup/style.css" />
     <link rel="stylesheet" href="assets/dist/theme/css/popup/responsive.css" />
     <link rel="stylesheet" href="assets/dist/theme/css/popup/animation.css" />
+    <!-- Devicons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   </head>
   <body>
     <!-- Barsa Main -->
     <div class="barsa" id="scroll-content">
-      <!-- header -->
-      <header id="top" class="barsa-header">
-        <!-- Navigation -->
-        <nav
-          class="barsa-nav align-items-center d-flex justify-content-between"
+    <!-- header -->
+    <header id="top" class="barsa-header">
+      <!-- Navigation -->
+      <nav
+        class="barsa-nav align-items-center d-flex justify-content-between"
         >
-          <!-- Logo  -->
-          <a href="#">
-            <div class="logo">
-              <img src="assets/images/header/icon.png" alt="Logo" />
-              <h1>
-                <span>Porto Nexus</span></span>
-              </h1>
-            </div>
-          </a>
-
-          <!-- Menu-list -->
-          <ul
-            class="desktopNav header-Nav mb-0 list-unstyled d-flex align-items-center gap-5"
-          >
-            <li><a data-lang-en="Home" data-lang-fr="Acceuil" 
-                data-lang-pt="Inicio" href="#top">Home</a></li>
-            <li><a data-lang-en="Services" data-lang-fr="Services" 
-                data-lang-pt="Serviços" href="#services">Services</a></li>
-            <li><a data-lang-en="About Us" data-lang-fr="A propos" 
-                data-lang-pt="Sobre nos" href="#about">About Us</a></li>
-            <li><a data-lang-en="Contact Us" data-lang-fr="Contactez-nous" 
-                data-lang-pt="Fala Connosco" href="#contact">Contact Us</a></li>
-          </ul>
-
-          <!-- Social media -->
-          <div class="more">
-            <div class="socialMedia d-flex align-items-center">
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"> <i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-          </div>
-          <div class="lang-menu">
-              <button id="lang-en" class="lang-button">
-                  <img src="assets/images/languages/english-flag.svg" alt="English" class="flag-icon">
-              </button>
-              <button id="lang-fr" class="lang-button">
-                  <img src="assets/images/languages/french-flag.svg" alt="Français" class="flag-icon">
-              </button>
-              <button id="lang-pt" class="lang-button">
-                  <img src="assets/images/languages/pt-flag.svg" alt="Português" class="flag-icon">
-              </button>
-          </div>
-        </nav>
-
-        <!-- Hero section -->
-        <section class="barsa-hero py-5 padding-y-80 pb-0">
-          <div class="container">
-            <h1 class="barsa-h1 text-center" 
-                data-lang-en="Web Digital Agency" data-lang-fr="Agence Web Digitale" 
-                data-lang-pt="Agencia Web">
-                Web Digital Agency
+        <!-- Logo  -->
+        <a href="#">
+          <div class="logo">
+            <img src="assets/images/header/icon.png" alt="Logo" />
+            <h1>
+              <span>Porto Nexus</span>
             </h1>
-            <p class="barsa-desc text-center w-75 mx-auto">
-              We develop the relationships that underpin the next phase in your
-              organisation's growth. We do this by discerning the We develop the
-              relationships that underpin the next phas
+          </div>
+        </a>
+        <!-- Menu-list -->
+        <ul
+          class="desktopNav header-Nav mb-0 list-unstyled d-flex align-items-center gap-5"
+          >
+          <li><a data-lang-en="Home" data-lang-fr="Acceuil" 
+            data-lang-pt="Inicio" href="#top">Home</a></li>
+          <li><a data-lang-en="Services" data-lang-fr="Services" 
+            data-lang-pt="Serviços" href="#services">Services</a></li>
+          <li><a data-lang-en="About Us" data-lang-fr="A propos" 
+            data-lang-pt="Sobre nos" href="#about">About Us</a></li>
+          <li><a data-lang-en="Contact Us" data-lang-fr="Contactez-nous" 
+            data-lang-pt="Fala Connosco" href="#contact">Contact Us</a></li>
+        </ul>
+        <!-- Social media -->
+        <div class="more">
+          <div class="socialMedia d-flex align-items-center">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="lang-menu">
+          <button id="lang-en" class="lang-button">
+          <img src="assets/images/languages/english-flag.svg" alt="English" class="flag-icon">
+          </button>
+          <button id="lang-fr" class="lang-button">
+          <img src="assets/images/languages/french-flag.svg" alt="Français" class="flag-icon">
+          </button>
+          <button id="lang-pt" class="lang-button">
+          <img src="assets/images/languages/pt-flag.svg" alt="Português" class="flag-icon">
+          </button>
+        </div>
+      </nav>
+      <!-- Hero section -->
+      <section
+          class="barsa-hero position-relative pt-5 d-flex flex-column justify-content-center">
+          <div class="container position-relative z-3 pt-5">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="barsa-h2 small dark">
+                  You Are Losing Business Due to a Weak Digital Presence
+                </h2>
+              </div>
+              <div class="col-md-5 offset-md-1">
+                <h5>
+                  Struggling to keep up with digital trends while handling core operations?
+                </h5>
+                <br>
+                <h5>
+                  Did you know 76% of consumers check a company's online presence before visiting?
+                </h5>
+                <br>
+                <h5>
+                  Avoiding high costs and risk in hiring and training digital staff?
+                </h5>
+              </div>
+              <div class="col-md-12 mt-5">
+              </div>
+            </div>
+          </div>
+          <div class="bg">
+            <img style="object-fit: none;" class="opacity-25" src="assets/images/about/about1.png" alt="Overlay" />
+            <img class="position-absolute top-0 start-0 w-100 h-100" src="assets/images/header/overlay.png" alt="Bg" />
+          </div>
+      </section>
+    </header>
+    <!-- Contact US Form -->
+    <section id="contact" class="py-5 barsa-form video-block">
+      <div class="container position-relative z-3">
+        <div class="row align-items-center">
+          <div class="col-md-7 px-5 tab-none">
+            <div class="playBtn startplay">
+              <div class="btnInner"><i class="fa-solid fa-play"></i></div>
+            </div>
+            <h3 style="font-weight: 500;" class="barsa-h3 text-center">
+              Let us ensures your brand stands out and attracts the right audience.
+            </h3>
+            <ul
+              class="mt-5 barsa-list list-unstyled row justify-content-center"
+              >
+              <div class="col text-center">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>Website/E-commerce
+                </li>
+              </div>
+              <div class="col text-center">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>Logo and Web Design
+                </li>
+              </div>
+              <div class="col text-center">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>Copywriting
+                </li>
+              </div>
+              <div class="col text-center">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>Social Media Management
+                </li>
+              </div>
+            </ul>
+          </div>
+          <div class="col-md-5">
+            <!-- barsa form -->
+            <form class="form1" onsubmit="return false">
+              <article class="mb-5">
+                <h3 class="m-0 barsa-h3">Let's start this journey</h3>
+                <p class="barsa-desc text-light">
+                  Fill in the form and we will get in touch with you
+                </p>
+              </article>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="inputSingle">
+                    <i class="fa-solid fa-user"></i>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Name"
+                      />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="inputSingle">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email Address"
+                      />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="inputSingle">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <input
+                      type="digits"
+                      name="phone"
+                      placeholder="Phone No"
+                      />
+                  </div>
+                </div>
+              </div>
+              <button class="barsa-button2 mt-4" id="sub">
+              Submit Request
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- bg -->
+      <div class="bg">
+        <img class="opacity-25" src="assets/images/backgrounds/contact-us-bg.jpg" alt="Overlay" />
+        <img class="position-absolute top-0 start-0 w-100 h-100" src="assets/images/backgrounds/overlay3.png" alt="Overlay" />
+      </div>
+    </section>
+    <!-- Services -->
+    <section id="services" class="barsa-services margin-y-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 sm-100">
+            <div class="serviceSingle">
+              <div class="row h-100 w-100 align-items-center">
+                <div class="sm-30 col-md-3 col-sm-5 text-center">
+                  <img
+                    src="assets/images/services/innovation.png"
+                    alt="innovation"
+                    class="w-100"
+                    />
+                </div>
+                <div class="sm-70 col-md-9 col-sm-7">
+                  <article>
+                    <h4 class="barsa-h4">Web Creation</h4>
+                    <p class="barsa-desc m-0 small">Website, e-commerce</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 sm-100">
+            <div class="serviceSingle">
+              <div class="row h-100 w-100 align-items-center">
+                <div class="col-md-3 sm-30 col-sm-5 text-center">
+                  <img
+                    src="assets/images/services/lauch.png"
+                    alt="innovation"
+                    class="w-100"
+                    />
+                </div>
+                <div class="sm-70 col-md-9 col-sm-7">
+                  <article>
+                    <h4 class="barsa-h4">Design</h4>
+                    <p class="barsa-desc m-0 small">Logo, Branding, Web design</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 sm-100">
+            <div class="serviceSingle">
+              <div class="row h-100 w-100 align-items-center">
+                <div class="sm-30 col-md-3 col-sm-5 text-center">
+                  <img
+                    src="assets/images/services/stakeholder.png"
+                    alt="innovation"
+                    class="w-100"
+                    />
+                </div>
+                <div class="sm-70 col-md-9 col-sm-7">
+                  <article>
+                    <h4 class="barsa-h4">Digital Presence</h4>
+                    <p class="barsa-desc m-0 small">Copywriting, Social Media, Marketing</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- barsa about 3 -->
+    <section class="barsa-about padding-y-80 margin-y-80">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 position-relative">
+            <img
+              src="assets/images/gif/Version control.gif"
+              alt="About "
+              class="gifAnimate"
+              />
+          </div>
+          <div class="col-md-6 ps-4 position-relative z-3">
+            <h2 class="barsa-h2 dark">
+              Making Your Business Stand Out
+            </h2>
+            <ul class="barsa-list2 my-4 row list-unstyled">
+              <li class="col-md-12">
+                <img
+                  src="assets/images/about/listImages/l1.png"
+                  alt="About List"
+                  />
+                Awesome Website for Better Visibility
+              </li>
+              <li class="col-md-12">
+                <img
+                  src="assets/images/about/listImages/l4.png"
+                  alt="About List"
+                  />
+                Rank in Google’s Top 10
+              </li>
+              <li class="col-md-12">
+                <img
+                  src="assets/images/about/listImages/l2.png"
+                  alt="About List"
+                  />
+                Focus on What Matters
+              </li>
+              <li class="col-md-12">
+                <img
+                  src="assets/images/about/listImages/l5.png"
+                  alt="About List"
+                  />
+                Reduce Hiring Costs and Risks
+              </li>
+              <li class="col-md-12">
+                <img
+                  src="assets/images/about/listImages/l3.png"
+                  alt="About List"
+                  />
+                Monthly Maintenance Available
+              </li>
+              <li class="col-md-12">
+                <img
+                  src="assets/images/about/listImages/l6.png"
+                  alt="About List"
+                  />
+                100% Remote Service, No Travel Costs
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About with counters -->
+    <section id="about" class="barsa-about progress-text barsa-cut position-relative margin-y-80 padding-y-80">
+      <div class="container position-relative z-3">
+        <div class="row align-items-center">
+          <div class="col-md-6 ps-4">
+            <h2 class="barsa-h2 dark">
+              We Provide The Solutions To Grow Your Business
+            </h2>
+            <p class="barsa-desc">
+              We create stunning websites, optimize your search rankings, and manage your social media, 
+              so you can focus on growing your business.
             </p>
           </div>
-        </section>
-      </header>
-
-      <!-- Contact US Form -->
-      <section id="contact" class="py-5 barsa-form video-block">
-        <div class="container position-relative z-3">
-          <div class="row align-items-center">
-            <div class="col-md-7 px-5 tab-none">
-              <div class="playBtn startplay">
-                <div class="btnInner"><i class="fa-solid fa-play"></i></div>
-              </div>
-              <h2 class="barsa-h2 text-center">
-                Over 3 Million Ready to Work Creatives!
-              </h2>
-
-              <ul
-                class="mt-5 barsa-list list-unstyled row justify-content-center"
-              >
-                <div class="col text-center">
-                  <li>
-                    <i class="fa-solid fa-circle-check"></i>Application
-                    Developement
-                  </li>
-                </div>
-                <div class="col text-center">
-                  <li>
-                    <i class="fa-solid fa-circle-check"></i>Application
-                    Developement
-                  </li>
-                </div>
-              </ul>
-            </div>
-            <div class="col-md-5">
-              <!-- barsa form -->
-              <form class="form1" onsubmit="return false">
-                <article class="mb-5">
-                  <p class="m-0 barsa-desc text-light">
-                    Marketing Busines s Compaign
-                  </p>
-                  <h3 class="barsa-h3">Request a Quote</h3>
-                </article>
-
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="inputSingle">
-                      <i class="fa-solid fa-user"></i>
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="Complete Name"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="inputSingle">
-                      <i class="fa-solid fa-envelope"></i>
-                      <input
-                        type="email"
-                        name="email"
-                        placeholder="Email Address"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="inputSingle">
-                      <i class="fa-solid fa-phone-volume"></i>
-                      <input
-                        type="digits"
-                        name="phone"
-                        placeholder="Phone No"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <button class="barsa-button2 mt-4" id="sub">
-                  Submit Request
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <!-- bg -->
-        <div class="bg">
-          <img class="opacity-25" src="assets/images/backgrounds/contact-us-bg.jpg" alt="Overlay" />
-          <img class="position-absolute top-0 start-0 w-100 h-100" src="assets/images/backgrounds/overlay3.png" alt="Overlay" />
-        </div>
-      </section>
-
-      <!-- Services -->
-      <section id="services" class="barsa-services margin-y-80">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 col-sm-4 sm-100">
-              <div class="serviceSingle">
-                <div class="row h-100 w-100 align-items-center">
-                  <div class="sm-30 col-md-3 col-sm-5 text-center">
-                    <img
-                      src="assets/images/services/innovation.png"
-                      alt="innovation"
-                      class="w-100"
-                    />
-                  </div>
-                  <div class="sm-70 col-md-9 col-sm-7">
-                    <article>
-                      <h4 class="barsa-h4">Web Creation</h4>
-                      <p class="barsa-desc m-0 small">Website, e-commerce</p>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-4 sm-100">
-              <div class="serviceSingle">
-                <div class="row h-100 w-100 align-items-center">
-                  <div class="col-md-3 sm-30 col-sm-5 text-center">
-                    <img
-                      src="assets/images/services/lauch.png"
-                      alt="innovation"
-                      class="w-100"
-                    />
-                  </div>
-                  <div class="sm-70 col-md-9 col-sm-7">
-                    <article>
-                      <h4 class="barsa-h4">Design</h4>
-                      <p class="barsa-desc m-0 small">Logo, Branding, Web design</p>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-4 sm-100">
-              <div class="serviceSingle">
-                <div class="row h-100 w-100 align-items-center">
-                  <div class="sm-30 col-md-3 col-sm-5 text-center">
-                    <img
-                      src="assets/images/services/stakeholder.png"
-                      alt="innovation"
-                      class="w-100"
-                    />
-                  </div>
-                  <div class="sm-70 col-md-9 col-sm-7">
-                    <article>
-                      <h4 class="barsa-h4">Business Growth</h4>
-                      <p class="barsa-desc m-0 small">Copywriting, Social Media, Marketing</p>
-                    </article>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- barsa about 3 -->
-      <section id="about" class="barsa-about padding-y-80 margin-y-80">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 position-relative">
-              <img
-                src="assets/images/gif/Version control.gif"
-                alt="About "
-                class="gifAnimate"
+          <div class="col-md-6 position-relative">
+            <img
+              src="assets/images/about/about2.png"
+              alt="About"
+              class="w-100"
               />
+          </div>
+        </div>
+        <!-- counter -->
+        <div class="row pt-5">
+          <div class="col-md-3 sm-50 col-sm-3 star position-relative">
+            <div class="counter">
+              <div class="count"><span>20</span>+</div>
+              Satisfied clients
             </div>
-            <div class="col-md-6 ps-4 position-relative z-3">
-              <h2 class="barsa-h2 dark">
-                Making Your Business Unique
-              </h2>
-
-              <ul class="barsa-list2 my-4 row list-unstyled">
-                <li class="col-md-12">
-                  <img
-                    src="assets/images/about/listImages/l1.png"
-                    alt="About List"
-                  />
-                  Awesome website for better visibility
-                </li>
-                <li class="col-md-12">
-                  <img
-                    src="assets/images/about/listImages/l4.png"
-                    alt="About List"
-                  />
-                  Top 10 on Google 
-                </li>
-                <li class="col-md-12">
-                  <img
-                    src="assets/images/about/listImages/l2.png"
-                    alt="About List"
-                  />
-                  Focus on your business
-                </li>
-                <li class="col-md-12">
-                  <img
-                    src="assets/images/about/listImages/l5.png"
-                    alt="About List"
-                  />
-                  Lower hiring costs and risks
-                </li>
-                <li class="col-md-12">
-                  <img
-                    src="assets/images/about/listImages/l3.png"
-                    alt="About List"
-                  />
-                  Monthly maintenance available
-                </li>
-                <li class="col-md-12">
-                  <img
-                    src="assets/images/about/listImages/l6.png"
-                    alt="About List"
-                  />
-                  100% remote, no travel costs
-                </li>
-              </ul>
+          </div>
+          <div class="col-md-3 sm-50 col-sm-3 nStar star position-relative">
+            <div class="counter">
+              <div class="count"><span>50</span>+</div>
+              Market researches
+            </div>
+          </div>
+          <div class="col-md-3 sm-50 col-sm-3 position-relative">
+            <div class="counter">
+              <div class="count"><span>30</span>+</div>
+              projects
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- barsa about 2 -->
-      <section
-        class="barsa-about progress-text barsa-cut position-relative margin-y-80 padding-y-80"
-      >
-        <div class="container position-relative z-3">
-          <div class="row align-items-center">
-            <div class="col-md-6 ps-4">
-              <h2 class="barsa-h2 dark">
-                We Provide The Solutions To Grow Your Business
-              </h2>
+      </div>
+      <!-- Hero Background -->
+      <div class="heroBG bg">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+    <!-- barsa technologies -->
+    <section id="projects" class="projects margin-y-80 py-5">
+      <span class="tag3" data-lang-en="Technologies we use" data-lang-fr="Technologies que nous utilisons"  data-lang-pt="Tecnologias que usamos">Technologies we use</span>
+      <div class="container">
+        <div class="row appendProject">
+          <div class="col mt-5 projectContainer">
+            <div class="projectSingle">
+              <i style="font-size: 100px; color: #21759b;" class="devicon-wordpress-plain colored"></i>
+            </div>
+            <div class="add">
+              <h5 class="barsa-h5 dark mt-4 text-center">
+                Wordpress
+              </h5>
+            </div>
+          </div>
+          <div class="col mt-5 projectContainer">
+            <div class="projectSingle">
+              <img
+                width="100px"
+                src="assets/images/services/shopify.svg"
+                alt="ProjectIcon"
+                />
+            </div>
+            <div class="add">
+              <h5 class="barsa-h5 dark mt-4 text-center">
+                Shopify
+              </h5>
+            </div>
+          </div>
+          <div class="col mt-5 projectContainer">
+            <div class="projectSingle">
+              <img width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+            </div>
+            <div class="add">
+              <h5 class="barsa-h5 dark mt-4 text-center">
+                Figma<br />
+              </h5>
+            </div>
+          </div>
+          <div class="col mt-5 projectContainer">
+            <div class="projectSingle">  
+              <img width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" />
+            </div>
+            <div class="add">
+              <h5 class="barsa-h5 dark mt-4 text-center">
+                Adobe<br />
+                Photoshop
+              </h5>
+            </div>
+          </div>
+          <div class="col mt-5 projectContainer">
+            <div class="projectSingle">
+              <i style="font-size: 100px;" class="devicon-react-original colored"></i>
+            </div>
+            <div class="add">
+              <h5 class="barsa-h5 dark mt-4 text-center">
+                React<br />
+              </h5>
+            </div>
+          </div>
+          <div class="col mt-5 projectContainer">
+            <div class="projectSingle">
+              <i style="font-size: 100px;" class="devicon-html5-plain colored"></i>
+            </div>
+            <div class="add">
+              <h5 class="barsa-h5 dark mt-4 text-center">
+                HTML<br />
+              </h5>
+            </div>
+          </div>
+          <div class="col mt-5 projectContainer">
+            <div class="projectSingle">
+              <img width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+            </div>
+            <div class="add">
+              <h5 class="barsa-h5 dark mt-4 text-center">
+                Javascript<br />
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- barsa clients details -->
+    <!--       <section id="clients" class="testimonials">
+      <div class="container">
+        <h2 class="barsa-h2 dark text-center">
+          Thousands of Five-Star Ratings<br />
+          and Counting
+        </h2>
+      </div>
+      
+      <div class="testimonialsSlider">
+        <div class="swiper-wrapper my-5">
+          <div class="swiper-slide">
+            <div class="testimonialSingle">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
               <p class="barsa-desc">
-                We develop the relationships that underpin the next phase in
-                your organisation's growth. We do this by discerning the We
-                develop the relationships that underpin the next phas
+                « There is about 11 hours of video conferencing time in the
+                process we normally follow, and with the added time associated
+                with reaching out to clients. »
               </p>
-
-            </div>
-            <div class="col-md-6 position-relative">
-              <img
-                src="assets/images/about/about2.png"
-                alt="About"
-                class="w-100"
-              />
+              <article class="aboutTestimonials">
+                <h6>Michel Doe</h6>
+                <p>San Francisco, California</p>
+              </article>
             </div>
           </div>
-
-          <!-- counter -->
-          <div class="row pt-5">
-            <div class="col-md-3 sm-50 col-sm-3 star position-relative">
-              <div class="counter">
-                <div class="count"><span>556</span>k</div>
-                client satisfaction
+          <div class="swiper-slide">
+            <div class="testimonialSingle">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-            </div>
-            <div class="col-md-3 sm-50 col-sm-3 nStar star position-relative">
-              <div class="counter">
-                <div class="count"><span>256</span>k</div>
-                Envato market
-              </div>
-            </div>
-            <div class="col-md-3 sm-50 col-sm-3 star position-relative">
-              <div class="counter">
-                <div class="count"><span>356</span>k</div>
-                mobile apps
-              </div>
-            </div>
-            <div class="col-md-3 sm-50 col-sm-3 position-relative">
-              <div class="counter">
-                <div class="count"><span>356</span>k</div>
-                mobile apps
-              </div>
+              <p class="barsa-desc">
+                « Usability testing helps to reduce the risk that we're
+                building the wrong thing for our customers, while also
+                bringing colleagues outside of the design team closer to our
+                customers and their direct feedback. »
+              </p>
+              <article class="aboutTestimonials">
+                <h6>Michel Doe</h6>
+                <p>San Francisco, California</p>
+              </article>
             </div>
           </div>
-        </div>
-        <!-- Hero Background -->
-        <div class="heroBG bg">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </section>
-
-      <!-- barsa technologies -->
-      <section id="projects" class="projects margin-y-80 py-5">
-        <span class="tag3">Technologies we use</span>
-        <div class="container">
-          <div class="row appendProject">
-            <div class="col mt-5 projectContainer">
-              <div class="projectSingle">
-                <img
-                  class="ProjectIcon"
-                  src="assets/images/projects/s4.png"
-                  alt="ProjectIcon"
-                />
+          <div class="swiper-slide">
+            <div class="testimonialSingle">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <!-- project add on -->
-              <div class="add">
-                <h5 class="barsa-h5 dark mt-4 text-center">
-                  Figma Dashboard<br />
-                  Designs
-                </h5>
-
-                <span class="addP"><i class="fa-solid fa-plus"></i></span>
-              </div>
+              <p class="barsa-desc">
+                « Because a lot of what our design team works on is
+                confidential, we needed to set controls over who had access to
+                the prototype while we were creating it, and restrict access
+                with simple password settings
+              </p>
+              <article class="aboutTestimonials">
+                <h6>Michel Doe</h6>
+                <p>San Francisco, California</p>
+              </article>
             </div>
-            <div class="col mt-5 projectContainer">
-              <div class="projectSingle">
-                <img
-                  class="ProjectIcon"
-                  src="assets/images/projects/Layer 28.png"
-                  alt="ProjectIcon"
-                />
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonialSingle">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <!-- project add on -->
-              <div class="add">
-                <h5 class="barsa-h5 dark mt-4 text-center">
-                  Figma Dashboard<br />
-                  Designs
-                </h5>
-
-                <span class="addP"><i class="fa-solid fa-plus"></i></span>
-              </div>
+              <p class="barsa-desc">
+                « Because a lot of what our design team works on is
+                confidential, we needed to set controls over who had access to
+                the prototype while we were creating it, and restrict access
+                with simple password settings
+              </p>
+              <article class="aboutTestimonials">
+                <h6>Michel Doe</h6>
+                <p>San Francisco, California</p>
+              </article>
             </div>
-            <div class="col mt-5 projectContainer">
-              <div class="projectSingle">
-                <img
-                  class="projectImg"
-                  src="assets/images/projects/overview/figma.jpg"
-                  alt="Overview"
-                />
-                <img
-                  class="ProjectIcon"
-                  src="assets/images/projects/figma.png"
-                  alt="ProjectIcon"
-                />
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonialSingle">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <!-- project add on -->
-              <div class="add">
-                <h5 class="barsa-h5 dark mt-4 text-center">
-                  Figma Dashboard<br />
-                  Designs
-                </h5>
-
-                <span class="addP"><i class="fa-solid fa-plus"></i></span>
-              </div>
+              <p class="barsa-desc">
+                « Because a lot of what our design team works on is
+                confidential, we needed to set controls over who had access to
+                the prototype while we were creating it, and restrict access
+                with simple password settings
+              </p>
+              <article class="aboutTestimonials">
+                <h6>Michel Doe</h6>
+                <p>San Francisco, California</p>
+              </article>
             </div>
-            <div class="col mt-5 projectContainer">
-              <div class="projectSingle">
-                <img
-                  class="ProjectIcon"
-                  src="assets/images/projects/psd.png"
-                  alt="ProjectIcon"
-                />
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonialSingle">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
-              <!-- project add on -->
-              <div class="add">
-                <h5 class="barsa-h5 dark mt-4 text-center">
-                  Figma Dashboard<br />
-                  Designs
-                </h5>
-
-                <span class="addP"><i class="fa-solid fa-plus"></i></span>
-              </div>
-            </div>
-            <div class="col mt-5 projectContainer">
-              <div class="projectSingle">
-                <img
-                  class="ProjectIcon"
-                  src="assets/images/projects/ai.png"
-                  alt="ProjectIcon"
-                />
-              </div>
-              <!-- project add on -->
-              <div class="add">
-                <h5 class="barsa-h5 dark mt-4 text-center">
-                  Figma Dashboard<br />
-                  Designs
-                </h5>
-
-                <span class="addP"><i class="fa-solid fa-plus"></i></span>
-              </div>
+              <p class="barsa-desc">
+                « From the moment we launched our usability test, it took only
+                a week to get useful results. »
+              </p>
+              <article class="aboutTestimonials">
+                <h6>Michel Doe</h6>
+                <p>San Francisco, California</p>
+              </article>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- barsa clients details -->
-      <section id="clients" class="testimonials">
-        <div class="container">
-          <h2 class="barsa-h2 dark text-center">
-            Thousands of Five-Star Ratings<br />
-            and Counting
-          </h2>
+        <div class="bg z-3">
+          <img src="assets/images/backgrounds/overlay2.png" alt="Overlay" />
         </div>
-
-        <!-- clients review slider -->
-        <div class="testimonialsSlider">
-          <div class="swiper-wrapper my-5">
-            <div class="swiper-slide">
-              <div class="testimonialSingle">
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="barsa-desc">
-                  « There is about 11 hours of video conferencing time in the
-                  process we normally follow, and with the added time associated
-                  with reaching out to clients. »
-                </p>
-                <article class="aboutTestimonials">
-                  <h6>Michel Doe</h6>
-                  <p>San Francisco, California</p>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonialSingle">
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="barsa-desc">
-                  « Usability testing helps to reduce the risk that we're
-                  building the wrong thing for our customers, while also
-                  bringing colleagues outside of the design team closer to our
-                  customers and their direct feedback. »
-                </p>
-                <article class="aboutTestimonials">
-                  <h6>Michel Doe</h6>
-                  <p>San Francisco, California</p>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonialSingle">
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="barsa-desc">
-                  « Because a lot of what our design team works on is
-                  confidential, we needed to set controls over who had access to
-                  the prototype while we were creating it, and restrict access
-                  with simple password settings
-                </p>
-                <article class="aboutTestimonials">
-                  <h6>Michel Doe</h6>
-                  <p>San Francisco, California</p>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonialSingle">
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="barsa-desc">
-                  « Because a lot of what our design team works on is
-                  confidential, we needed to set controls over who had access to
-                  the prototype while we were creating it, and restrict access
-                  with simple password settings
-                </p>
-                <article class="aboutTestimonials">
-                  <h6>Michel Doe</h6>
-                  <p>San Francisco, California</p>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonialSingle">
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="barsa-desc">
-                  « Because a lot of what our design team works on is
-                  confidential, we needed to set controls over who had access to
-                  the prototype while we were creating it, and restrict access
-                  with simple password settings
-                </p>
-                <article class="aboutTestimonials">
-                  <h6>Michel Doe</h6>
-                  <p>San Francisco, California</p>
-                </article>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonialSingle">
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="barsa-desc">
-                  « From the moment we launched our usability test, it took only
-                  a week to get useful results. »
-                </p>
-                <article class="aboutTestimonials">
-                  <h6>Michel Doe</h6>
-                  <p>San Francisco, California</p>
-                </article>
-              </div>
-            </div>
-          </div>
-          <div class="bg z-3">
-            <img src="assets/images/backgrounds/overlay2.png" alt="Overlay" />
-          </div>
-
-          <div class="testimonial-pagination"></div>
-        </div>
-      </section>
-
-      <!-- footer section -->
-      <footer class="pt-5 mb-0">
-        <div class="container position-relative z-3">
-          <div
-            class="flex-wrap d-flex w-100 justify-content-between align-items-center my-5 pb-4 gap-2"
+      
+        <div class="testimonial-pagination"></div>
+      </div>
+      </section> -->
+    <!-- footer section -->
+    <footer class="pt-5 mb-0">
+      <div class="container position-relative z-3">
+        <div
+          class="flex-wrap d-flex w-100 justify-content-between align-items-center my-5 pb-4 gap-2"
           >
-            <!-- footer header -->
-            <article>
-              <p class="barsa-desc small light m-0">
-                Get in touch with us if you have ideas, doubts or questions
-              </p>
-              <h3 class="barsa-h3" style="color: rgb(97, 0, 242)">
-                contact@portonexus.com
-              </h3>
-            </article>
-
-            <a href="mailto:contact@portonexus.com" class="barsa-button3 d-flex align-items-center">
-                  Contact Us
-              <span
-                ><i class="fa-solid fa-arrow-up-long"></i
-                ><i class="fa-solid fa-arrow-up-long"></i
-              ></span>
-                </a>
-          </div>
+          <!-- footer header -->
+          <article>
+            <p class="barsa-desc small light m-0">
+              Get in touch with us if you have ideas, doubts or questions
+            </p>
+            <h3 class="barsa-h3" style="color: rgb(97, 0, 242)">
+              contact@portonexus.com
+            </h3>
+          </article>
+          <a href="mailto:contact@portonexus.com" class="barsa-button3 d-flex align-items-center">
+          Contact Us
+          <span
+            ><i class="fa-solid fa-arrow-up-long"></i
+            ><i class="fa-solid fa-arrow-up-long"></i
+            ></span>
+          </a>
         </div>
-        <!-- copyright -->
-        <div class="copyright">
-          &copy; Porto Nexus All rights Reserved 2024
-        </div>
-
-        <!-- background -->
-        <div class="bg">
-          <img src="assets/images/backgrounds/overlay3.png" alt="Overlay" />
-        </div>
-      </footer>
-
+      </div>
+      <!-- copyright -->
+      <div class="copyright">
+        &copy; Porto Nexus All rights Reserved 2024
+      </div>
+      <!-- background -->
+      <div class="bg">
+        <img src="assets/images/backgrounds/overlay3.png" alt="Overlay" />
+      </div>
+    </footer>
     <!-- Internationalization script -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const defaultLang = 'en';
-            const userLang = navigator.language || navigator.userLanguage;
-            const lang = userLang.startsWith('fr') ? 'fr' : userLang.startsWith('pt') ? 'pt' : defaultLang;
-
-            const langButtons = {
-                'en': document.getElementById('lang-en'),
-                'fr': document.getElementById('lang-fr'),
-                'pt': document.getElementById('lang-pt')
-            };
-
-            function setLanguage(lang) {
-                document.querySelectorAll('[data-lang-en]').forEach(element => {
-                    element.textContent = element.getAttribute(`data-lang-${lang}`);
-                });
-
-                // Disable the current language button and enable others
-                for (let key in langButtons) {
-                    if (key === lang) {
-                        langButtons[key].classList.add('disabled');
-                        langButtons[key].setAttribute('disabled', 'disabled');
-                    } else {
-                        langButtons[key].classList.remove('disabled');
-                        langButtons[key].removeAttribute('disabled');
-                    }
-                }
-            }
-
-            setLanguage(lang); // Set the initial language based on browser settings
-
-            langButtons['en'].addEventListener('click', () => setLanguage('en'));
-            langButtons['fr'].addEventListener('click', () => setLanguage('fr'));
-            langButtons['pt'].addEventListener('click', () => setLanguage('pt'));
-        });
+      document.addEventListener('DOMContentLoaded', () => {
+          const defaultLang = 'en';
+          const userLang = navigator.language || navigator.userLanguage;
+          const lang = userLang.startsWith('fr') ? 'fr' : userLang.startsWith('pt') ? 'pt' : defaultLang;
+      
+          const langButtons = {
+              'en': document.getElementById('lang-en'),
+              'fr': document.getElementById('lang-fr'),
+              'pt': document.getElementById('lang-pt')
+          };
+      
+          function setLanguage(lang) {
+              document.querySelectorAll('[data-lang-en]').forEach(element => {
+                  element.textContent = element.getAttribute(`data-lang-${lang}`);
+              });
+      
+              // Disable the current language button and enable others
+              for (let key in langButtons) {
+                  if (key === lang) {
+                      langButtons[key].classList.add('disabled');
+                      langButtons[key].setAttribute('disabled', 'disabled');
+                  } else {
+                      langButtons[key].classList.remove('disabled');
+                      langButtons[key].removeAttribute('disabled');
+                  }
+              }
+          }
+      
+          setLanguage(lang); // Set the initial language based on browser settings
+      
+          langButtons['en'].addEventListener('click', () => setLanguage('en'));
+          langButtons['fr'].addEventListener('click', () => setLanguage('fr'));
+          langButtons['pt'].addEventListener('click', () => setLanguage('pt'));
+      });
     </script>
-
     <!-- error -->
     <div id="error"></div>
-
     <!-- jQuery -->
     <script src="assets/dist/lib/jQuery/jquery-3.7.1.min.js"></script>
-
     <!-- Bootstrap JS -->
     <script src="assets/dist/framework/bootstrap/js/bootstrap.min.js"></script>
-
     <!-- Swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <!-- Shadder effect script -->
     <script src="assets/dist/lib/swiperSlider/swiper-gl.min.js"></script>
-
     <!-- circle text -->
     <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
-
     <!-- gsap -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-
     <!-- gsap scrollTrigger -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-
     <!-- gsap scrollto -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-
     <!-- Smooth Scrollbar -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"></script>
-
     <!-- Marquee -->
     <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
-
     <!-- Theme Files -->
     <script src="assets/dist/theme/js/barsa.js"></script>
     <script src="assets/dist/theme/js/popup/custom.js"></script>
