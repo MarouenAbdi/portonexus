@@ -1,0 +1,27 @@
+name: Deploy to Lightsail
+
+on:
+  push:
+    branches:
+      - main # Or your preferred branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
+
+      - name: Deploy to Lightsail
+        run: |
+          ssh -o StrictHostKeyChecking=no ubuntu@15.236.224.89 << 'EOF'
+            cd /var/www/html
+            git pull origin main  # Make sure this matches your branch
+            # Additional commands to restart services, clear caches, etc.
+          EOF

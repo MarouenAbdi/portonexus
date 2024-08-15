@@ -1,846 +1,994 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Porto Nexus | Premier Web Digital Agency</title>
-    <link rel="icon" href="./icon.ico" type="image/x-icon">
-    <meta name="description" content="Porto Nexus is your go-to web digital agency. We create stunning websites, boost SEO rankings, and manage social media to grow your business. Contact us today!">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Porto Nexus | Premier Web Digital Agency</title>
+		<link rel="icon" href="./icon.ico" type="image/x-icon" />
+		<meta
+			name="description"
+			content="Porto Nexus is your go-to web digital agency. We create stunning websites, boost SEO rankings, and manage social media to grow your business. Contact us today!"
+		/>
+		<!-- Swiper styles -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<!-- Shader Effect styles -->
+		<link
+			rel="stylesheet"
+			href="assets/dist/lib/swiperSlider/swiper-gl.min.css"
+		/>
+		<!-- font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		/>
+		<!-- Bootstrap -->
+		<link
+			rel="stylesheet"
+			href="assets/dist/framework/bootstrap/css/bootstrap.min.css"
+		/>
+		<!-- Theme Files -->
+		<link rel="stylesheet" href="assets/dist/theme/css/color.css" />
+		<link rel="stylesheet" href="assets/dist/theme/css/theme.css" />
+		<link rel="stylesheet" href="assets/dist/theme/css/responsive.css" />
+		<link rel="stylesheet" href="assets/dist/theme/css/animation.css" />
+		<!-- pop up -->
+		<link rel="stylesheet" href="assets/dist/theme/css/popup/style.css" />
+		<link rel="stylesheet" href="assets/dist/theme/css/popup/responsive.css" />
+		<link rel="stylesheet" href="assets/dist/theme/css/popup/animation.css" />
+		<!-- Devicons -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+		/>
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var swiper = new Swiper('.testimonialsSlider .swiper-container', {
+					loop: true,
+					pagination: {
+						el: '.testimonial-pagination',
+						clickable: true,
+					},
+					navigation: {
+						nextEl: '.button-next',
+						prevEl: '.button-prev',
+					},
+					autoplay: {
+						delay: 5000,
+						disableOnInteraction: false,
+					},
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<!-- Barsa Main -->
+		<div class="barsa" id="scroll-content">
+			<!-- header -->
+			<header id="top" class="barsa-header">
+				<!-- Navigation -->
+				<nav
+					class="barsa-nav align-items-center d-flex justify-content-between"
+				>
+					<!-- Logo  -->
+					<a href="#">
+						<div class="logo">
+							<img src="assets/images/header/icon.png" alt="Logo" />
+							<h1>
+								<span>Porto Nexus</span>
+							</h1>
+						</div>
+					</a>
+					<!-- Menu-list -->
+					<ul
+						class="desktopNav header-Nav mb-0 list-unstyled d-flex align-items-center gap-5"
+					>
+						<li>
+							<a
+								data-lang-en="Home"
+								data-lang-fr="Acceuil"
+								data-lang-pt="Inicio"
+								href="#top"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a
+								data-lang-en="Services"
+								data-lang-fr="Services"
+								data-lang-pt="Serviços"
+								href="#services"
+								>Services</a
+							>
+						</li>
+						<li>
+							<a
+								data-lang-en="About Us"
+								data-lang-fr="A propos"
+								data-lang-pt="Sobre nos"
+								href="#about"
+								>About Us</a
+							>
+						</li>
+						<li>
+							<a
+								data-lang-en="Contact Us"
+								data-lang-fr="Contactez-nous"
+								data-lang-pt="Fala Connosco"
+								href="#contact"
+								>Contact Us</a
+							>
+						</li>
+					</ul>
+					<!-- Social media -->
+					<div class="more">
+						<div class="socialMedia d-flex align-items-center">
+							<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+							<a href="#"> <i class="fa-brands fa-facebook"></i></a>
+							<a href="#"><i class="fa-brands fa-instagram"></i></a>
+						</div>
+					</div>
+					<div class="lang-menu">
+						<button id="lang-en" class="lang-button">
+							<img
+								src="assets/images/languages/english-flag.svg"
+								alt="English"
+								class="flag-icon"
+							/>
+						</button>
+						<button id="lang-fr" class="lang-button">
+							<img
+								src="assets/images/languages/french-flag.svg"
+								alt="Français"
+								class="flag-icon"
+							/>
+						</button>
+						<button id="lang-pt" class="lang-button">
+							<img
+								src="assets/images/languages/pt-flag.svg"
+								alt="Português"
+								class="flag-icon"
+							/>
+						</button>
+					</div>
+				</nav>
+				<!-- Hero section -->
+				<section
+					class="barsa-hero position-relative pt-5 d-flex flex-column justify-content-center"
+				>
+					<div class="container position-relative z-3 pt-5">
+						<div class="row">
+							<div class="col-md-6">
+								<h2
+									class="barsa-h2 small dark"
+									data-lang-en="You Are Losing Business Due to a Weak Digital Presence"
+									data-lang-fr="Vous Perdez Des Clients à Cause d'une Faible Présence Digitale"
+									data-lang-pt="Está a Perder Negócios Devido a Uma Fraca Presença Digital"
+								>
+									You Are Losing Business Due to a Weak Digital Presence
+								</h2>
+							</div>
+							<div class="col-md-5 offset-md-1">
+								<h5
+									data-lang-en="Struggling to keep up with digital trends while handling core operations?"
+									data-lang-fr="Vous avez du mal à suivre les tendances numériques tout en gérant vos opérations de base ?"
+									data-lang-pt="Está a ter dificuldades em acompanhar as tendências digitais enquanto gere as operações principais?"
+								>
+									Struggling to keep up with digital trends while handling core
+									operations?
+								</h5>
+								<br />
+								<h5
+									data-lang-en="Did you know 76% of consumers check a company's online presence before visiting?"
+									data-lang-fr="Saviez-vous que 76 % des consommateurs vérifient la présence en ligne d'une entreprise avant de la visiter ?"
+									data-lang-pt="Sabia que 76% dos consumidores verificam a presença online de uma empresa antes de a visitarem?"
+								>
+									Did you know 76% of consumers check a company's online
+									presence before visiting?
+								</h5>
+								<br />
+								<h5
+									data-lang-en="Avoiding high costs and risk in hiring and training digital staff?"
+									data-lang-fr="Éviter les coûts élevés et les risques liés à l'embauche et à la formation de personnel Digitale ?"
+									data-lang-pt="Evitar custos elevados e riscos na contratação e formação de pessoal digital?"
+								>
+									Avoiding high costs and risk in hiring and training digital
+									staff?
+								</h5>
+							</div>
+							<div class="col-md-12 mt-5"></div>
+						</div>
+					</div>
+					<div class="bg">
+						<img
+							style="object-fit: none"
+							class="opacity-25"
+							src="assets/images/about/about1.png"
+							alt="Overlay"
+						/>
+						<img
+							class="position-absolute top-0 start-0 w-100 h-100"
+							src="assets/images/header/overlay.png"
+							alt="Bg"
+						/>
+					</div>
+				</section>
+			</header>
 
-    <!-- Swiper styles -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-      />
-    <!-- Shader Effect styles -->
-    <link
-      rel="stylesheet"
-      href="assets/dist/lib/swiperSlider/swiper-gl.min.css"
-      />
-    <!-- font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      />
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="assets/dist/framework/bootstrap/css/bootstrap.min.css"
-      />
-    <!-- Theme Files -->
-    <link rel="stylesheet" href="assets/dist/theme/css/color.css" />
-    <link rel="stylesheet" href="assets/dist/theme/css/theme.css" />
-    <link rel="stylesheet" href="assets/dist/theme/css/responsive.css" />
-    <link rel="stylesheet" href="assets/dist/theme/css/animation.css" />
-    <!-- pop up -->
-    <link rel="stylesheet" href="assets/dist/theme/css/popup/style.css" />
-    <link rel="stylesheet" href="assets/dist/theme/css/popup/responsive.css" />
-    <link rel="stylesheet" href="assets/dist/theme/css/popup/animation.css" />
-    <!-- Devicons -->
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-  </head>
-  <body>
-    <!-- Barsa Main -->
-    <div class="barsa" id="scroll-content">
-    <!-- header -->
-    <header id="top" class="barsa-header">
-      <!-- Navigation -->
-      <nav
-        class="barsa-nav align-items-center d-flex justify-content-between"
-        >
-        <!-- Logo  -->
-        <a href="#">
-          <div class="logo">
-            <img src="assets/images/header/icon.png" alt="Logo" />
-            <h1>
-              <span>Porto Nexus</span>
-            </h1>
-          </div>
-        </a>
-        <!-- Menu-list -->
-        <ul
-          class="desktopNav header-Nav mb-0 list-unstyled d-flex align-items-center gap-5"
-          >
-          <li><a data-lang-en="Home" data-lang-fr="Acceuil" 
-            data-lang-pt="Inicio" href="#top">Home</a></li>
-          <li><a data-lang-en="Services" data-lang-fr="Services" 
-            data-lang-pt="Serviços" href="#services">Services</a></li>
-          <li><a data-lang-en="About Us" data-lang-fr="A propos" 
-            data-lang-pt="Sobre nos" href="#about">About Us</a></li>
-          <li><a data-lang-en="Contact Us" data-lang-fr="Contactez-nous" 
-            data-lang-pt="Fala Connosco" href="#contact">Contact Us</a></li>
-        </ul>
-        <!-- Social media -->
-        <div class="more">
-          <div class="socialMedia d-flex align-items-center">
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"> <i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="lang-menu">
-          <button id="lang-en" class="lang-button">
-          <img src="assets/images/languages/english-flag.svg" alt="English" class="flag-icon">
-          </button>
-          <button id="lang-fr" class="lang-button">
-          <img src="assets/images/languages/french-flag.svg" alt="Français" class="flag-icon">
-          </button>
-          <button id="lang-pt" class="lang-button">
-          <img src="assets/images/languages/pt-flag.svg" alt="Português" class="flag-icon">
-          </button>
-        </div>
-      </nav>
-      <!-- Hero section -->
-      <section
-          class="barsa-hero position-relative pt-5 d-flex flex-column justify-content-center">
-          <div class="container position-relative z-3 pt-5">
-            <div class="row">
-              <div class="col-md-6">
-                <h2 class="barsa-h2 small dark" 
-                  data-lang-en="You Are Losing Business Due to a Weak Digital Presence" 
-                  data-lang-fr="Vous Perdez Des Clients à Cause d'une Faible Présence Digitale"  
-                  data-lang-pt="Está a Perder Negócios Devido a Uma Fraca Presença Digital"
-                >
-                  You Are Losing Business Due to a Weak Digital Presence
-                </h2>
-              </div>
-              <div class="col-md-5 offset-md-1">
-                <h5 
-                  data-lang-en="Struggling to keep up with digital trends while handling core operations?" 
-                  data-lang-fr="Vous avez du mal à suivre les tendances numériques tout en gérant vos opérations de base ?"  
-                  data-lang-pt="Está a ter dificuldades em acompanhar as tendências digitais enquanto gere as operações principais?"
-                >
-                  Struggling to keep up with digital trends while handling core operations?
-                </h5>
-                <br>
-                <h5 
-                  data-lang-en="Did you know 76% of consumers check a company's online presence before visiting?" 
-                  data-lang-fr="Saviez-vous que 76 % des consommateurs vérifient la présence en ligne d'une entreprise avant de la visiter ?"  
-                  data-lang-pt="Sabia que 76% dos consumidores verificam a presença online de uma empresa antes de a visitarem?"
-                >
-                  Did you know 76% of consumers check a company's online presence before visiting?
-                </h5>
-                <br>
-                <h5 
-                  data-lang-en="Avoiding high costs and risk in hiring and training digital staff?" 
-                  data-lang-fr="Éviter les coûts élevés et les risques liés à l'embauche et à la formation de personnel Digitale ?"  
-                  data-lang-pt="Evitar custos elevados e riscos na contratação e formação de pessoal digital?"
-                >
-                  Avoiding high costs and risk in hiring and training digital staff?
-                </h5>
-              </div>
-              <div class="col-md-12 mt-5">
-              </div>
-            </div>
-          </div>
-          <div class="bg">
-            <img style="object-fit: none;" class="opacity-25" src="assets/images/about/about1.png" alt="Overlay" />
-            <img class="position-absolute top-0 start-0 w-100 h-100" src="assets/images/header/overlay.png" alt="Bg" />
-          </div>
-      </section>
-    </header>
-    <!-- Contact US Form -->
-    <section id="contact" class="py-5 barsa-form video-block">
-      <div class="container position-relative z-3">
-        <div class="row align-items-center">
-          <div class="col-md-7 px-5 tab-none">
-            <div class="playBtn startplay">
-              <div class="btnInner"><i class="fa-solid fa-play"></i></div>
-            </div>
-            <h3 style="font-weight: 500;" class="barsa-h3 text-center"
-              data-lang-en="Let us ensures your brand stands out and attracts the right audience." 
-              data-lang-fr="Nous veillons à ce que votre marque se distingue et attire le bon public."  
-              data-lang-pt="Deixe-nos garantir que a sua marca se destaca e atrai o público certo."
-            ></h3>
-            <ul
-              class="mt-5 barsa-list list-unstyled row justify-content-center"
-              >
-              <div class="col text-center">
-                <li>
-                  <i class="fa-solid fa-circle-check"></i>Website/E-commerce
-                </li>
-              </div>
-              <div class="col text-center">
-                <li>
-                  <i class="fa-solid fa-circle-check"></i>Logo and Web Design
-                </li>
-              </div>
-              <div class="col text-center">
-                <li>
-                  <i class="fa-solid fa-circle-check"></i>Copywriting
-                </li>
-              </div>
-              <div class="col text-center">
-                <li>
-                  <i class="fa-solid fa-circle-check"></i>Social Media Management
-                </li>
-              </div>
-            </ul>
-          </div>
-          <div class="col-md-5">
-            <!-- barsa form -->
-            <form class="form1" onsubmit="return false">
-              <article class="mb-5">
-                <h3 class="m-0 barsa-h3"
-                  style="font-weight: 700;"
-                  data-lang-en="Don't Waste More Time!" 
-                  data-lang-fr="Ne Perdez Pas de Temps!"  
-                  data-lang-pt="Não Perca Mais Tempo!"
-                ></h3>
-                <p class="barsa-desc text-light"
-                  data-lang-en="Fill in the form and we will get in touch with you." 
-                  data-lang-fr="Remplissez le formulaire et nous prendrons contact avec vous."  
-                  data-lang-pt="Preencha o formulário e entraremos em contacto consigo"
-                ></p>
-              </article>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="inputSingle">
-                    <i class="fa-solid fa-user"></i>
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Name"
-                      />
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="inputSingle">
-                    <i class="fa-solid fa-envelope"></i>
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email"
-                      />
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="inputSingle">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <input
-                      type="digits"
-                      name="phone"
-                      placeholder="Phone No"
-                      />
-                  </div>
-                </div>
-              </div>
-              <button class="barsa-button2 mt-4" id="sub"
-                data-lang-en="Submit Request" 
-                data-lang-fr="Envoyer Demande"  
-                data-lang-pt="Enviar pedido"
-              >
-                Submit Request
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- bg -->
-      <div class="bg">
-        <img class="opacity-25" src="assets/images/backgrounds/contact-us-bg.jpg" alt="Overlay" />
-        <img class="position-absolute top-0 start-0 w-100 h-100" src="assets/images/backgrounds/overlay3.png" alt="Overlay" />
-      </div>
-    </section>
-    <!-- Services -->
-    <section id="services" class="barsa-services margin-y-80">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-4 sm-100">
-            <div class="serviceSingle">
-              <div class="row h-100 w-100 align-items-center">
-                <div class="sm-30 col-md-3 col-sm-5 text-center">
-                  <img
-                    src="assets/images/services/innovation.png"
-                    alt="innovation"
-                    class="w-100"
-                    />
-                </div>
-                <div class="sm-70 col-md-9 col-sm-7">
-                  <article>
-                    <h4 class="barsa-h4">Web Creation</h4>
-                    <p class="barsa-desc m-0 small">Website, e-commerce</p>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 sm-100">
-            <div class="serviceSingle">
-              <div class="row h-100 w-100 align-items-center">
-                <div class="col-md-3 sm-30 col-sm-5 text-center">
-                  <img
-                    src="assets/images/services/lauch.png"
-                    alt="innovation"
-                    class="w-100"
-                    />
-                </div>
-                <div class="sm-70 col-md-9 col-sm-7">
-                  <article>
-                    <h4 class="barsa-h4">Design</h4>
-                    <p class="barsa-desc m-0 small">Logo, Branding, Web design</p>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 sm-100">
-            <div class="serviceSingle">
-              <div class="row h-100 w-100 align-items-center">
-                <div class="sm-30 col-md-3 col-sm-5 text-center">
-                  <img
-                    src="assets/images/services/stakeholder.png"
-                    alt="innovation"
-                    class="w-100"
-                    />
-                </div>
-                <div class="sm-70 col-md-9 col-sm-7">
-                  <article>
-                    <h4 class="barsa-h4">Digital Presence</h4>
-                    <p class="barsa-desc m-0 small">Copywriting, Social Media, Marketing</p>
-                  </article>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- barsa about 3 -->
-    <section class="barsa-about padding-y-80 margin-y-80">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 position-relative">
-            <img
-              src="assets/images/gif/Version control.gif"
-              alt="About "
-              class="gifAnimate"
-              />
-          </div>
-          <div class="col-md-6 ps-4 position-relative z-3">
-            <h2 class="barsa-h2 dark"
-              data-lang-en="Stand Out" 
-              data-lang-fr="Démarquez-vous"  
-              data-lang-pt="Destaque-se"
-            >
-            </h2>
-            <ul class="barsa-list2 my-4 row list-unstyled">
-              <li class="col-md-12">
-                <img
-                  src="assets/images/about/listImages/l1.png"
-                  alt="About List"
-                  />
-                <span                  
-                  data-lang-en="Awesome Website for Better Visibility" 
-                  data-lang-fr="Un site web génial pour une meilleure visibilité"  
-                  data-lang-pt="Site fantástico para uma melhor visibilidade" 
-                  class="service-description">
-                </span>
-              </li>
-              <li class="col-md-12">
-                <img
-                  src="assets/images/about/listImages/l4.png"
-                  alt="About List"
-                  />
-                <span                  
-                  data-lang-en="Top 10 in Google Search" 
-                  data-lang-fr="Top 10 dans Google Search"  
-                  data-lang-pt="Top 10 na Google Search" 
-                  class="service-description">
-                </span>
-              </li>
-              <li class="col-md-12">
-                <img
-                  src="assets/images/about/listImages/l2.png"
-                  alt="About List"
-                  />
-                <span                  
-                  data-lang-en="Focus on What Matters" 
-                  data-lang-fr="Se concentrer sur ce qui importe"  
-                  data-lang-pt="Concentrar-se no que importa" 
-                  class="service-description">
-                </span>
-              </li>
-              <li class="col-md-12">
-                <img
-                  src="assets/images/about/listImages/l5.png"
-                  alt="About List"
-                />
-                <span                  
-                  data-lang-en="Hiring Costs and Risks Reduced" 
-                  data-lang-fr="Coûts et des risques d'embauche réduit"  
-                  data-lang-pt="Custos e riscos de contratação reduzidos" 
-                  class="service-description">
-                </span>
-              </li>
-              <li class="col-md-12">
-                <img
-                  src="assets/images/about/listImages/l3.png"
-                  alt="About List"
-                  />
-                  <span                  
-                    data-lang-en="Monthly Maintenance Available" 
-                    data-lang-fr="Entretien mensuel disponible"  
-                    data-lang-pt="Manutenção mensal disponível" 
-                    class="service-description">
-                  </span>
-              </li>
-              <li class="col-md-12">
-                <img
-                  src="assets/images/about/listImages/l6.png"
-                  alt="About List"
-                  />
-                <span                  
-                data-lang-en="100% Remote Service, No Travel Costs" 
-                data-lang-fr="Service 100% à distance, pas de frais de déplacement"  
-                data-lang-pt="Serviço 100% remoto, sem custos de deslocação" 
-                class="service-description"></span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About with counters -->
-    <section id="about" class="barsa-about progress-text barsa-cut position-relative margin-y-80 padding-y-80">
-      <div class="container position-relative z-3">
-        <div class="row align-items-center">
-          <div class="col-md-6 ps-4">
-            <h2 class="barsa-h2 dark"
-              data-lang-en="Solutions To Grow Your Business" 
-              data-lang-fr="Solutions pour développer votre entreprise"  
-              data-lang-pt="Soluções para crescer o seu negócio"
-            >
-            </h2>
-            <p class="barsa-desc"
-              data-lang-en="We create stunning websites, 
-                optimize your search rankings, 
-                and manage your social media, 
-                so you can focus on growing your business." 
-              data-lang-fr="Nous créons de superbes sites web, 
-                optimisons votre référencement et gérons vos médias sociaux, 
-                afin que vous puissiez vous concentrer sur la croissance de votre entreprise."  
-              data-lang-pt="Criamos websites fantásticos, 
-                optimizamos as suas classificações 
-                de pesquisa e gerimos as suas redes sociais, 
-                para que se possa concentrar no crescimento do seu negócio."
-            >
-            </p>
-          </div>
-          <div class="col-md-6 position-relative">
-            <img
-              src="assets/images/about/about2.png"
-              alt="About"
-              class="w-100"
-              />
-          </div>
-        </div>
-        <!-- counter -->
-        <div class="row pt-5">
-          <div class="col-md-3 sm-50 col-sm-3 star position-relative">
-            <div class="counter">
-              <div class="count"><span>20</span>+</div>
-              <span 
-                data-lang-en="Satisfied clients" 
-                data-lang-fr="Clients satisfaits"  
-                data-lang-pt="Clientes satisfeitos">
-              </span>
-            </div>
-          </div>
-          <div class="col-md-3 sm-50 col-sm-3 nStar star position-relative">
-            <div class="counter">
-              <div class="count"><span>50</span>+</div>
-              <span 
-                data-lang-en="Market researches" 
-                data-lang-fr="Etudes de marché"  
-                data-lang-pt="Estudos de mercado">
-              </span>
-            </div>
-          </div>
-          <div class="col-md-3 sm-50 col-sm-3 position-relative">
-            <div class="counter">
-              <div class="count"><span>30</span>+</div>
-              <span 
-                data-lang-en="Projects" 
-                data-lang-fr="Projets"  
-                data-lang-pt="Projetos">
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Hero Background -->
-      <div class="heroBG bg">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </section>
-    <!-- barsa technologies -->
-    <section id="projects" class="projects margin-y-80 py-5">
-      <span class="tag3" data-lang-en="Technologies we use" data-lang-fr="Technologies que nous utilisons"  data-lang-pt="Tecnologias que usamos">Technologies we use</span>
-      <div class="container">
-        <div class="row appendProject">
-          <div class="col mt-5 projectContainer">
-            <div class="projectSingle">
-              <i style="font-size: 100px; color: #21759b;" class="devicon-wordpress-plain colored"></i>
-            </div>
-            <div class="add">
-              <h5 class="barsa-h5 dark mt-4 text-center">
-                Wordpress
-              </h5>
-            </div>
-          </div>
-          <div class="col mt-5 projectContainer">
-            <div class="projectSingle">
-              <img
-                width="100px"
-                src="assets/images/services/shopify.svg"
-                alt="ProjectIcon"
-                />
-            </div>
-            <div class="add">
-              <h5 class="barsa-h5 dark mt-4 text-center">
-                Shopify
-              </h5>
-            </div>
-          </div>
-          <div class="col mt-5 projectContainer">
-            <div class="projectSingle">
-              <img width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-            </div>
-            <div class="add">
-              <h5 class="barsa-h5 dark mt-4 text-center">
-                Figma<br />
-              </h5>
-            </div>
-          </div>
-          <div class="col mt-5 projectContainer">
-            <div class="projectSingle">  
-              <img width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg" />
-            </div>
-            <div class="add">
-              <h5 class="barsa-h5 dark mt-4 text-center">
-                Adobe<br />
-                Photoshop
-              </h5>
-            </div>
-          </div>
-          <div class="col mt-5 projectContainer">
-            <div class="projectSingle">
-              <i style="font-size: 100px;" class="devicon-react-original colored"></i>
-            </div>
-            <div class="add">
-              <h5 class="barsa-h5 dark mt-4 text-center">
-                React<br />
-              </h5>
-            </div>
-          </div>
-          <div class="col mt-5 projectContainer">
-            <div class="projectSingle">
-              <i style="font-size: 100px;" class="devicon-html5-plain colored"></i>
-            </div>
-            <div class="add">
-              <h5 class="barsa-h5 dark mt-4 text-center">
-                HTML<br />
-              </h5>
-            </div>
-          </div>
-          <div class="col mt-5 projectContainer">
-            <div class="projectSingle">
-              <img width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-            </div>
-            <div class="add">
-              <h5 class="barsa-h5 dark mt-4 text-center">
-                Javascript<br />
-              </h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- barsa clients details -->
-    <!--       <section id="clients" class="testimonials">
-      <div class="container">
-        <h2 class="barsa-h2 dark text-center">
-          Thousands of Five-Star Ratings<br />
-          and Counting
-        </h2>
-      </div>
-      
-      <div class="testimonialsSlider">
-        <div class="swiper-wrapper my-5">
-          <div class="swiper-slide">
-            <div class="testimonialSingle">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p class="barsa-desc">
-                « There is about 11 hours of video conferencing time in the
-                process we normally follow, and with the added time associated
-                with reaching out to clients. »
-              </p>
-              <article class="aboutTestimonials">
-                <h6>Michel Doe</h6>
-                <p>San Francisco, California</p>
-              </article>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="testimonialSingle">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p class="barsa-desc">
-                « Usability testing helps to reduce the risk that we're
-                building the wrong thing for our customers, while also
-                bringing colleagues outside of the design team closer to our
-                customers and their direct feedback. »
-              </p>
-              <article class="aboutTestimonials">
-                <h6>Michel Doe</h6>
-                <p>San Francisco, California</p>
-              </article>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="testimonialSingle">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p class="barsa-desc">
-                « Because a lot of what our design team works on is
-                confidential, we needed to set controls over who had access to
-                the prototype while we were creating it, and restrict access
-                with simple password settings
-              </p>
-              <article class="aboutTestimonials">
-                <h6>Michel Doe</h6>
-                <p>San Francisco, California</p>
-              </article>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="testimonialSingle">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p class="barsa-desc">
-                « Because a lot of what our design team works on is
-                confidential, we needed to set controls over who had access to
-                the prototype while we were creating it, and restrict access
-                with simple password settings
-              </p>
-              <article class="aboutTestimonials">
-                <h6>Michel Doe</h6>
-                <p>San Francisco, California</p>
-              </article>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="testimonialSingle">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p class="barsa-desc">
-                « Because a lot of what our design team works on is
-                confidential, we needed to set controls over who had access to
-                the prototype while we were creating it, and restrict access
-                with simple password settings
-              </p>
-              <article class="aboutTestimonials">
-                <h6>Michel Doe</h6>
-                <p>San Francisco, California</p>
-              </article>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="testimonialSingle">
-              <div class="stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p class="barsa-desc">
-                « From the moment we launched our usability test, it took only
-                a week to get useful results. »
-              </p>
-              <article class="aboutTestimonials">
-                <h6>Michel Doe</h6>
-                <p>San Francisco, California</p>
-              </article>
-            </div>
-          </div>
-        </div>
-        <div class="bg z-3">
-          <img src="assets/images/backgrounds/overlay2.png" alt="Overlay" />
-        </div>
-      
-        <div class="testimonial-pagination"></div>
-      </div>
-      </section> -->
-    <!-- footer section -->
-    <footer class="pt-5 mb-0">
-      <div class="container position-relative z-3">
-        <div
-          class="flex-wrap d-flex w-100 justify-content-between align-items-center my-5 pb-4 gap-2"
-          >
-          <!-- footer header -->
-          <article>
-            <p 
-              class="barsa-desc small light m-0"
-              data-lang-en="Get in touch with us if you have ideas, doubts or questions" 
-              data-lang-fr="Contactez-nous si vous avez des idées, des doutes ou des questions"  
-              data-lang-pt="Entre em contacto connosco se tiver ideias, dúvidas ou perguntas"
-            >
-            </p>
-            <h3 class="barsa-h3" style="color: rgb(97, 0, 242)">
-              contact@portonexus.com
-            </h3>
-          </article>
-          <a href="mailto:contact@portonexus.com" class="barsa-button3 d-flex align-items-center">
-          <span 
-              data-lang-en="Contact Us" 
-              data-lang-fr="Contactez-nous"  
-              data-lang-pt="Fala Connosco">
-          </span>
-          <span
-            ><i class="fa-solid fa-arrow-up-long"></i
-            ><i class="fa-solid fa-arrow-up-long"></i
-            ></span>
-          </a>
-        </div>
-      </div>
-      <!-- copyright -->
-      <div class="copyright">
-        &copy; Porto Nexus All rights Reserved 2024
-      </div>
-      <!-- background -->
-      <div class="bg">
-        <img src="assets/images/backgrounds/overlay3.png" alt="Overlay" />
-      </div>
-    </footer>
-    <!-- Internationalization script -->
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-          const defaultLang = 'en';
-          const userLang = navigator.language || navigator.userLanguage;
-          const lang = userLang.startsWith('fr') ? 'fr' : userLang.startsWith('pt') ? 'pt' : defaultLang;
-      
-          const langButtons = {
-              'en': document.getElementById('lang-en'),
-              'fr': document.getElementById('lang-fr'),
-              'pt': document.getElementById('lang-pt')
-          };
-      
-          function setLanguage(lang) {
-              document.querySelectorAll('[data-lang-en]').forEach(element => {
-                  element.textContent = element.getAttribute(`data-lang-${lang}`);
-              });
-      
-              // Disable the current language button and enable others
-              for (let key in langButtons) {
-                  if (key === lang) {
-                      langButtons[key].classList.add('disabled');
-                      langButtons[key].setAttribute('disabled', 'disabled');
-                  } else {
-                      langButtons[key].classList.remove('disabled');
-                      langButtons[key].removeAttribute('disabled');
-                  }
-              }
-          }
-      
-          setLanguage(lang); // Set the initial language based on browser settings
-      
-          langButtons['en'].addEventListener('click', () => setLanguage('en'));
-          langButtons['fr'].addEventListener('click', () => setLanguage('fr'));
-          langButtons['pt'].addEventListener('click', () => setLanguage('pt'));
-      });
-    </script>
-    <!-- error -->
-    <div id="error"></div>
-    <!-- jQuery -->
-    <script src="assets/dist/lib/jQuery/jquery-3.7.1.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="assets/dist/framework/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Swiper script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Shadder effect script -->
-    <script src="assets/dist/lib/swiperSlider/swiper-gl.min.js"></script>
-    <!-- circle text -->
-    <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
-    <!-- gsap -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <!-- gsap scrollTrigger -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <!-- gsap scrollto -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-    <!-- Smooth Scrollbar -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"></script>
-    <!-- Marquee -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
-    <!-- Theme Files -->
-    <script src="assets/dist/theme/js/barsa.js"></script>
-    <script src="assets/dist/theme/js/popup/custom.js"></script>
-  </body>
+			<!-- Services -->
+			<section id="services" class="barsa-services margin-y-80">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 sm-100">
+							<div class="serviceSingle">
+								<div class="row h-100 w-100 align-items-center">
+									<div class="sm-30 col-md-3 col-sm-5 text-center">
+										<img src="assets/images/services/innovation.png" />
+									</div>
+									<div class="sm-70 col-md-9 col-sm-7">
+										<article>
+											<h4 class="barsa-h4">Web Creation</h4>
+											<p class="barsa-desc m-0 small">Website, e-commerce</p>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 sm-100">
+							<div class="serviceSingle">
+								<div class="row h-100 w-100 align-items-center">
+									<div class="col-md-3 sm-30 col-sm-5 text-center">
+										<img
+											src="assets/images/services/lauch.png"
+											class="services-icons"
+										/>
+									</div>
+									<div class="sm-70 col-md-9 col-sm-7">
+										<article>
+											<h4 class="barsa-h4">Design</h4>
+											<p class="barsa-desc m-0 small">
+												Logo, Branding, Web design
+											</p>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 sm-100">
+							<div class="serviceSingle">
+								<div class="row h-100 w-100 align-items-center">
+									<div class="sm-30 col-md-3 col-sm-5 text-center">
+										<img
+											src="assets/images/services/stakeholder.png"
+											class="w-100"
+										/>
+									</div>
+									<div class="sm-70 col-md-9 col-sm-7">
+										<article>
+											<h4 class="barsa-h4">Digital Presence</h4>
+											<p class="barsa-desc m-0 small">
+												Copywriting, Social Media, Marketing
+											</p>
+										</article>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- barsa about 3 -->
+			<section class="barsa-about padding-y-80 margin-y-80">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-6 position-relative">
+							<img
+								src="assets/images/gif/Version control.gif"
+								alt="About "
+								class="gifAnimate"
+							/>
+						</div>
+						<div class="col-md-6 ps-4 position-relative z-3">
+							<h2
+								class="barsa-h2 dark"
+								data-lang-en="Stand Out"
+								data-lang-fr="Démarquez-vous"
+								data-lang-pt="Destaque-se"
+							></h2>
+							<ul class="barsa-list2 my-4 row list-unstyled">
+								<li class="col-md-12">
+									<img
+										src="assets/images/about/listImages/l1.png"
+										alt="About List"
+									/>
+									<span
+										data-lang-en="Awesome Website for Better Visibility"
+										data-lang-fr="Un site web génial pour une meilleure visibilité"
+										data-lang-pt="Site fantástico para uma melhor visibilidade"
+										class="service-description"
+									>
+									</span>
+								</li>
+								<li class="col-md-12">
+									<img
+										src="assets/images/about/listImages/l4.png"
+										alt="About List"
+									/>
+									<span
+										data-lang-en="Top 10 in Google Search"
+										data-lang-fr="Top 10 dans Google Search"
+										data-lang-pt="Top 10 na Google Search"
+										class="service-description"
+									>
+									</span>
+								</li>
+								<li class="col-md-12">
+									<img
+										src="assets/images/about/listImages/l2.png"
+										alt="About List"
+									/>
+									<span
+										data-lang-en="Focus on What Matters"
+										data-lang-fr="Se concentrer sur ce qui importe"
+										data-lang-pt="Concentrar-se no que importa"
+										class="service-description"
+									>
+									</span>
+								</li>
+								<li class="col-md-12">
+									<img
+										src="assets/images/about/listImages/l5.png"
+										alt="About List"
+									/>
+									<span
+										data-lang-en="Hiring Costs and Risks Reduced"
+										data-lang-fr="Coûts et des risques d'embauche réduit"
+										data-lang-pt="Custos e riscos de contratação reduzidos"
+										class="service-description"
+									>
+									</span>
+								</li>
+								<li class="col-md-12">
+									<img
+										src="assets/images/about/listImages/l3.png"
+										alt="About List"
+									/>
+									<span
+										data-lang-en="Monthly Maintenance Available"
+										data-lang-fr="Entretien mensuel disponible"
+										data-lang-pt="Manutenção mensal disponível"
+										class="service-description"
+									>
+									</span>
+								</li>
+								<li class="col-md-12">
+									<img
+										src="assets/images/about/listImages/l6.png"
+										alt="About List"
+									/>
+									<span
+										data-lang-en="100% Remote Service, No Travel Costs"
+										data-lang-fr="Service 100% à distance, pas de frais de déplacement"
+										data-lang-pt="Serviço 100% remoto, sem custos de deslocação"
+										class="service-description"
+									></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact US Form -->
+			<section id="contact" class="py-5 barsa-form video-block">
+				<div class="container position-relative z-3">
+					<div class="row align-items-center">
+						<div class="col-md-7 px-5 tab-none">
+							<div class="playBtn startplay">
+								<div class="btnInner"><i class="fa-solid fa-play"></i></div>
+							</div>
+							<h3
+								style="font-weight: 500"
+								class="barsa-h3 text-center"
+								data-lang-en="Let us ensures your brand stands out and attracts the right audience."
+								data-lang-fr="Nous veillons à ce que votre marque se distingue et attire le bon public."
+								data-lang-pt="Deixe-nos garantir que a sua marca se destaca e atrai o público certo."
+							></h3>
+							<ul
+								class="mt-5 barsa-list list-unstyled row justify-content-center"
+							>
+								<div class="col text-center">
+									<li>
+										<i class="fa-solid fa-circle-check"></i>Website/E-commerce
+									</li>
+								</div>
+								<div class="col text-center">
+									<li>
+										<i class="fa-solid fa-circle-check"></i>Logo and Web Design
+									</li>
+								</div>
+								<div class="col text-center">
+									<li><i class="fa-solid fa-circle-check"></i>Copywriting</li>
+								</div>
+								<div class="col text-center">
+									<li>
+										<i class="fa-solid fa-circle-check"></i>Social Media
+										Management
+									</li>
+								</div>
+							</ul>
+						</div>
+						<div class="col-md-5">
+							<!-- barsa form -->
+							<form class="form1" onsubmit="return false">
+								<article class="mb-5">
+									<h3
+										class="m-0 barsa-h3"
+										style="font-weight: 700"
+										data-lang-en="Don't Waste More Time!"
+										data-lang-fr="Ne Perdez Pas de Temps!"
+										data-lang-pt="Não Perca Mais Tempo!"
+									></h3>
+									<p
+										class="barsa-desc text-light"
+										data-lang-en="Fill in the form and we will get in touch with you."
+										data-lang-fr="Remplissez le formulaire et nous prendrons contact avec vous."
+										data-lang-pt="Preencha o formulário e entraremos em contacto consigo"
+									></p>
+								</article>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="inputSingle">
+											<i class="fa-solid fa-user"></i>
+											<input type="text" name="name" placeholder="Name" />
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="inputSingle">
+											<i class="fa-solid fa-envelope"></i>
+											<input type="email" name="email" placeholder="Email" />
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="inputSingle">
+											<i class="fa-solid fa-phone-volume"></i>
+											<input
+												type="digits"
+												name="phone"
+												placeholder="Phone No"
+											/>
+										</div>
+									</div>
+								</div>
+								<button
+									class="barsa-button2 mt-4"
+									id="sub"
+									data-lang-en="Submit Request"
+									data-lang-fr="Envoyer Demande"
+									data-lang-pt="Enviar pedido"
+								>
+									Submit Request
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- bg -->
+				<div class="bg">
+					<img
+						class="opacity-25"
+						src="assets/images/backgrounds/contact-us-bg.jpg"
+						alt="Overlay"
+					/>
+					<img
+						class="position-absolute top-0 start-0 w-100 h-100"
+						src="assets/images/backgrounds/overlay3.png"
+						alt="Overlay"
+					/>
+				</div>
+			</section>
+
+			<!-- barsa technologies -->
+			<section id="projects" class="projects margin-y-80 py-5">
+				<span
+					class="tag3"
+					data-lang-en="Technologies we use"
+					data-lang-fr="Technologies que nous utilisons"
+					data-lang-pt="Tecnologias que usamos"
+					>Technologies we use</span
+				>
+				<div class="container">
+					<div class="row appendProject">
+						<div class="col mt-5 projectContainer">
+							<div class="projectSingle">
+								<i
+									style="font-size: 100px; color: #21759b"
+									class="devicon-wordpress-plain colored"
+								></i>
+							</div>
+							<div class="add">
+								<h5 class="barsa-h5 dark mt-4 text-center">Wordpress</h5>
+							</div>
+						</div>
+						<div class="col mt-5 projectContainer">
+							<div class="projectSingle">
+								<img
+									width="100px"
+									src="assets/images/services/shopify.svg"
+									alt="ProjectIcon"
+								/>
+							</div>
+							<div class="add">
+								<h5 class="barsa-h5 dark mt-4 text-center">Shopify</h5>
+							</div>
+						</div>
+						<div class="col mt-5 projectContainer">
+							<div class="projectSingle">
+								<img
+									width="100px"
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+								/>
+							</div>
+							<div class="add">
+								<h5 class="barsa-h5 dark mt-4 text-center">Figma<br /></h5>
+							</div>
+						</div>
+						<div class="col mt-5 projectContainer">
+							<div class="projectSingle">
+								<img
+									width="100px"
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg"
+								/>
+							</div>
+							<div class="add">
+								<h5 class="barsa-h5 dark mt-4 text-center">
+									Adobe<br />
+									Photoshop
+								</h5>
+							</div>
+						</div>
+						<div class="col mt-5 projectContainer">
+							<div class="projectSingle">
+								<i
+									style="font-size: 100px"
+									class="devicon-react-original colored"
+								></i>
+							</div>
+							<div class="add">
+								<h5 class="barsa-h5 dark mt-4 text-center">React<br /></h5>
+							</div>
+						</div>
+						<div class="col mt-5 projectContainer">
+							<div class="projectSingle">
+								<i
+									style="font-size: 100px"
+									class="devicon-html5-plain colored"
+								></i>
+							</div>
+							<div class="add">
+								<h5 class="barsa-h5 dark mt-4 text-center">HTML<br /></h5>
+							</div>
+						</div>
+						<div class="col mt-5 projectContainer">
+							<div class="projectSingle">
+								<img
+									width="100px"
+									src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+								/>
+							</div>
+							<div class="add">
+								<h5 class="barsa-h5 dark mt-4 text-center">Javascript<br /></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- About with counters -->
+			<section
+				id="about"
+				class="barsa-about progress-text barsa-cut position-relative margin-y-80 padding-y-80"
+			>
+				<div class="container position-relative z-3">
+					<div class="row align-items-center">
+						<div class="col-md-6 ps-4">
+							<h2
+								class="barsa-h2 dark"
+								data-lang-en="Solutions To Grow Your Business"
+								data-lang-fr="Solutions pour développer votre entreprise"
+								data-lang-pt="Soluções para crescer o seu negócio"
+							></h2>
+							<p
+								class="barsa-desc"
+								data-lang-en="We create stunning websites, 
+                  optimize your search rankings, 
+                  and manage your social media, 
+                  so you can focus on growing your business."
+								data-lang-fr="Nous créons de superbes sites web, 
+                  optimisons votre référencement et gérons vos médias sociaux, 
+                  afin que vous puissiez vous concentrer sur la croissance de votre entreprise."
+								data-lang-pt="Criamos websites fantásticos, 
+                  optimizamos as suas classificações 
+                  de pesquisa e gerimos as suas redes sociais, 
+                  para que se possa concentrar no crescimento do seu negócio."
+							></p>
+						</div>
+						<div class="col-md-6 position-relative">
+							<img
+								src="assets/images/about/about2.png"
+								alt="About"
+								class="w-100"
+							/>
+						</div>
+					</div>
+					<!-- counter -->
+					<div class="row pt-5">
+						<div class="col-md-3 sm-50 col-sm-3 star position-relative">
+							<div class="counter">
+								<div class="count"><span>20</span>+</div>
+								<span
+									data-lang-en="Satisfied clients"
+									data-lang-fr="Clients satisfaits"
+									data-lang-pt="Clientes satisfeitos"
+								>
+								</span>
+							</div>
+						</div>
+						<div class="col-md-3 sm-50 col-sm-3 nStar star position-relative">
+							<div class="counter">
+								<div class="count"><span>50</span>+</div>
+								<span
+									data-lang-en="Market researches"
+									data-lang-fr="Etudes de marché"
+									data-lang-pt="Estudos de mercado"
+								>
+								</span>
+							</div>
+						</div>
+						<div class="col-md-3 sm-50 col-sm-3 position-relative">
+							<div class="counter">
+								<div class="count"><span>30</span>+</div>
+								<span
+									data-lang-en="Projects"
+									data-lang-fr="Projets"
+									data-lang-pt="Projetos"
+								>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Hero Background -->
+				<div class="heroBG bg">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</section>
+
+			<!-- barsa clients details -->
+			<section id="clients" class="testimonials">
+				<div class="container">
+					<h2 class="barsa-h2 dark text-center">
+						Word on the Street: <br />
+						Our Clients Speak for Themselves
+					</h2>
+				</div>
+
+				<!-- client slider -->
+				<div class="testimonialsSlider">
+					<div class="swiper-wrapper my-5">
+						<div class="swiper-slide">
+							<div class="testimonialSingle">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<p class="barsa-desc">
+									« The team at Porto Nexus transformed our online presence.
+									Their design and SEO services boosted our traffic immensely! »
+								</p>
+								<article class="aboutTestimonials">
+									<h6>John Smith</h6>
+									<p>Web Design, SEO</p>
+								</article>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="testimonialSingle">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<p class="barsa-desc">
+									« Our branding has never looked better. Thanks to Porto Nexus,
+									we have a professional and cohesive image. »
+								</p>
+								<article class="aboutTestimonials">
+									<h6>Sophie Martin</h6>
+									<p>Branding, Graphic Design</p>
+								</article>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="testimonialSingle">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<p class="barsa-desc">
+									« The social media management by Porto Nexus has increased our
+									engagement and sales significantly. Amazing support! »
+								</p>
+								<article class="aboutTestimonials">
+									<h6>Lucas Almeida</h6>
+									<p>Social Media Management, Marketing</p>
+								</article>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="testimonialSingle">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<p class="barsa-desc">
+									« Their web development services were top-notch. Our
+									e-commerce platform is now user-friendly and secure. »
+								</p>
+								<article class="aboutTestimonials">
+									<h6>Emily O'Connor</h6>
+									<p>Web Development, E-commerce</p>
+								</article>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="testimonialSingle">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<p class="barsa-desc">
+									« Porto Nexus's customer support is exceptional. They are
+									always available and ready to help with any issue. »
+								</p>
+								<article class="aboutTestimonials">
+									<h6>Charlotte Dubois</h6>
+									<p>Customer Support, IT Services</p>
+								</article>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="testimonialSingle">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<p class="barsa-desc">
+									« Their creative team brought our vision to life. Our new
+									website design is stunning and functional. »
+								</p>
+								<article class="aboutTestimonials">
+									<h6>Thomas Silva</h6>
+									<p>Website Design, UX/UI</p>
+								</article>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="testimonialSingle">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<p class="barsa-desc">
+									« The content strategy provided by Porto Nexus has increased
+									our online visibility and brand awareness. »
+								</p>
+								<article class="aboutTestimonials">
+									<h6>David Clarke</h6>
+									<p>Content Strategy, SEO</p>
+								</article>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="testimonialSingle">
+								<div class="stars">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<p class="barsa-desc">
+									« Our project was handled with utmost professionalism. Porto
+									Nexus exceeded our expectations in every way. »
+								</p>
+								<article class="aboutTestimonials">
+									<h6>Maria Fernandes</h6>
+									<p>Project Management, Digital Marketing</p>
+								</article>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg z-3">
+						<img src="assets/images/backgrounds/overlay2.png" alt="Overlay" />
+					</div>
+					<div class="testimonial-pagination"></div>
+				</div>
+			</section>
+
+			<!-- footer section -->
+			<footer class="pt-5 mb-0">
+				<div class="container position-relative z-3">
+					<div
+						class="flex-wrap d-flex w-100 justify-content-between align-items-center my-5 pb-4 gap-2"
+					>
+						<!-- footer header -->
+						<article>
+							<p
+								class="barsa-desc small light m-0"
+								data-lang-en="Get in touch with us if you have ideas, doubts or questions"
+								data-lang-fr="Contactez-nous si vous avez des idées, des doutes ou des questions"
+								data-lang-pt="Entre em contacto connosco se tiver ideias, dúvidas ou perguntas"
+							></p>
+							<h3 class="barsa-h3" style="color: rgb(97, 0, 242)">
+								contact@portonexus.com
+							</h3>
+						</article>
+						<a
+							href="mailto:contact@portonexus.com"
+							class="barsa-button3 d-flex align-items-center"
+						>
+							<span
+								data-lang-en="Contact Us"
+								data-lang-fr="Contactez-nous"
+								data-lang-pt="Fala Connosco"
+							>
+							</span>
+							<span
+								><i class="fa-solid fa-arrow-up-long"></i
+								><i class="fa-solid fa-arrow-up-long"></i
+							></span>
+						</a>
+					</div>
+				</div>
+				<!-- copyright -->
+				<div class="copyright">&copy; Porto Nexus All rights Reserved 2024</div>
+				<!-- background -->
+				<div class="bg">
+					<img src="assets/images/backgrounds/overlay3.png" alt="Overlay" />
+				</div>
+			</footer>
+		</div>
+		<!-- Internationalization script -->
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const defaultLang = 'en';
+				const userLang = navigator.language || navigator.userLanguage;
+				const lang = userLang.startsWith('fr')
+					? 'fr'
+					: userLang.startsWith('pt')
+					? 'pt'
+					: defaultLang;
+
+				const langButtons = {
+					en: document.getElementById('lang-en'),
+					fr: document.getElementById('lang-fr'),
+					pt: document.getElementById('lang-pt'),
+				};
+
+				function setLanguage(lang) {
+					document.querySelectorAll('[data-lang-en]').forEach((element) => {
+						element.textContent = element.getAttribute(`data-lang-${lang}`);
+					});
+
+					// Disable the current language button and enable others
+					for (let key in langButtons) {
+						if (key === lang) {
+							langButtons[key].classList.add('disabled');
+							langButtons[key].setAttribute('disabled', 'disabled');
+						} else {
+							langButtons[key].classList.remove('disabled');
+							langButtons[key].removeAttribute('disabled');
+						}
+					}
+				}
+
+				setLanguage(lang); // Set the initial language based on browser settings
+
+				langButtons['en'].addEventListener('click', () => setLanguage('en'));
+				langButtons['fr'].addEventListener('click', () => setLanguage('fr'));
+				langButtons['pt'].addEventListener('click', () => setLanguage('pt'));
+			});
+		</script>
+
+		<!-- error -->
+		<div id="error"></div>
+		<!-- jQuery -->
+		<script src="assets/dist/lib/jQuery/jquery-3.7.1.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="assets/dist/framework/bootstrap/js/bootstrap.min.js"></script>
+		<!-- Swiper script -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!-- Shadder effect script -->
+		<script src="assets/dist/lib/swiperSlider/swiper-gl.min.js"></script>
+		<!-- circle text -->
+		<script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+		<!-- gsap -->
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+		<!-- gsap scrollTrigger -->
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+		<!-- gsap scrollto -->
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+		<!-- Smooth Scrollbar -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"></script>
+		<!-- Marquee -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
+		<!-- Theme Files -->
+		<script src="assets/dist/theme/js/barsa.js"></script>
+		<script src="assets/dist/theme/js/popup/custom.js"></script>
+	</body>
 </html>
