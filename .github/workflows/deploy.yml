@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to Lightsail
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@15.236.224.89 << 'EOF'
-            cd /var/www/html
+            cd /var/www/portonexus
             git pull origin main  # Make sure this matches your branch
             # Additional commands to restart services, clear caches, etc.
           EOF
