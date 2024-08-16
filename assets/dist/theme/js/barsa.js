@@ -81,24 +81,6 @@ $(document).ready(function () {
 		});
 	});
 
-	gsap.utils.toArray('.serviceSingle img').forEach((img) => {
-		let showGif = gsap.timeline({
-			scrollTrigger: {
-				trigger: '.barsa-hero',
-				scrub: true,
-				start: 'center center',
-				// onEnter: () => img.classList.add("animate"),
-			},
-		});
-
-		showGif.from(img, {
-			opacity: 0,
-			scale: 0.5,
-			x: -100,
-			y: 100,
-		});
-	});
-
 	gsap.utils.toArray('.pricingSingle img').forEach((img) => {
 		let showGif = gsap.timeline({
 			scrollTrigger: {
