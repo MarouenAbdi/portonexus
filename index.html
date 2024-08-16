@@ -5,45 +5,51 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Porto Nexus | Premier Web Digital Agency</title>
 		<link rel="icon" href="./logo.ico" type="image/x-icon" />
+
+		<!-- Meta Description -->
 		<meta
 			name="description"
 			content="Porto Nexus is your go-to web digital agency. We create stunning websites, boost SEO rankings, and manage social media to grow your business. Contact us today!"
 		/>
+
 		<!-- Swiper styles -->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
+
 		<!-- Shader Effect styles -->
 		<link
 			rel="stylesheet"
 			href="assets/dist/lib/swiperSlider/swiper-gl.min.css"
 		/>
-		<!-- font Awesome -->
+
+		<!-- Font Awesome -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 		/>
+
 		<!-- Bootstrap -->
 		<link
 			rel="stylesheet"
 			href="assets/dist/framework/bootstrap/css/bootstrap.min.css"
 		/>
+
 		<!-- Theme Files -->
 		<link rel="stylesheet" href="assets/dist/theme/css/color.css" />
 		<link rel="stylesheet" href="assets/dist/theme/css/theme.css" />
 		<link rel="stylesheet" href="assets/dist/theme/css/responsive.css" />
 		<link rel="stylesheet" href="assets/dist/theme/css/animation.css" />
-		<!-- pop up -->
-		<link rel="stylesheet" href="assets/dist/theme/css/popup/style.css" />
-		<link rel="stylesheet" href="assets/dist/theme/css/popup/responsive.css" />
-		<link rel="stylesheet" href="assets/dist/theme/css/popup/animation.css" />
+
 		<!-- Devicons -->
 		<link
 			rel="stylesheet"
 			type="text/css"
 			href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
 		/>
+
+		<!-- Swiper Script-->
 		<script>
 			document.addEventListener('DOMContentLoaded', function () {
 				var swiper = new Swiper('.testimonialsSlider .swiper-container', {
@@ -63,6 +69,19 @@
 				});
 			});
 		</script>
+		<!-- End Swiper Script-->
+
+		<!-- EmailJS Init-->
+		<script
+			type="text/javascript"
+			src="https://cdn.emailjs.com/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init('gcw-XTIN49NfZ1E2-');
+			})();
+		</script>
+		<!-- End EmailJS Init-->
 	</head>
 	<body>
 		<!-- Barsa Main -->
@@ -164,45 +183,59 @@
 				<section
 					class="barsa-hero position-relative py-4 d-flex flex-column justify-content-center"
 				>
-					<div class="container-fluid">
-						<div
-							class="row position-relative z-3 flex-grow-1 align-items-center justify-content-evenly"
-						>
-							<div class="col-md-3 align-self-end">
-								<div class="sideImgs">
-									<img
-										class="mt-4"
-										src="assets/images/header/h1.jpg"
-										alt="Side Image"
-										style="
-											translate: none;
-											rotate: none;
-											scale: none;
-											transform: translate(0px, 0px);
-											opacity: 1;
-										"
-									/>
+					<div class="container position-relative z-3">
+						<!-- hero Slider -->
+						<div class="heroSlider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="row align-items-center py-5">
+										<div class="col-md-12 lap-100">
+											<h1 class="barsa-h1 small light">
+												Flexible Solutions Best Business
+											</h1>
+											<p class="barsa-desc light">
+												Everyone has the right to freedom of thought, conscience
+												and religion; this right includes freedom to change his
+												religion
+											</p>
+											<div class="row">
+												<div class="col-md-6">
+													<ul class="barsa-list4 list-unstyled m-0">
+														<li>
+															<i class="fa-solid fa-circle-check"></i>
+															We're connecting you to Everything
+														</li>
+														<li>
+															<i class="fa-solid fa-circle-check"></i>
+															Digital Marketing Made Easy
+														</li>
+													</ul>
+												</div>
+												<div class="col-md-6">
+													<ul class="barsa-list4 list-unstyled m-0">
+														<li>
+															<i class="fa-solid fa-circle-check"></i>
+															We're connecting you to Everything
+														</li>
+														<li>
+															<i class="fa-solid fa-circle-check"></i>
+															Digital Marketing Made Easy
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>
-							<div class="col-md-5">
-								<h1 class="barsa-h1 text-center light">
-									Generation <br />Digital Agency
-								</h1>
-								<p class="barsa-desc light text-center mt-4">
-									We believe that great design should not be out of reach, so
-									our services are less than half the price of a full-time
-									designer.
-								</p>
 							</div>
 						</div>
 					</div>
 
 					<div class="bg dark">
-						<img src="assets/images/header/bg.jpg" alt="Bg" />
+						<img src="assets/images/backgrounds/bg-1.jpg" alt="Bg" />
 					</div>
 				</section>
 			</header>
-
 			<!-- Services -->
 			<section id="services" class="barsa-services margin-y-80">
 				<div class="container">
@@ -215,7 +248,7 @@
 									</div>
 									<div class="sm-70 col-md-9 col-sm-7">
 										<article>
-											<h4 class="barsa-h4">Web Creation</h4>
+											<h4 class="barsa-h4">Web Essential</h4>
 											<p class="barsa-desc m-0 small">Website, e-commerce</p>
 										</article>
 									</div>
@@ -233,10 +266,8 @@
 									</div>
 									<div class="sm-70 col-md-9 col-sm-7">
 										<article>
-											<h4 class="barsa-h4">Design</h4>
-											<p class="barsa-desc m-0 small">
-												Logo, Branding, Web design
-											</p>
+											<h4 class="barsa-h4">Branding</h4>
+											<p class="barsa-desc m-0 small">Brand, design</p>
 										</article>
 									</div>
 								</div>
@@ -254,9 +285,7 @@
 									<div class="sm-70 col-md-9 col-sm-7">
 										<article>
 											<h4 class="barsa-h4">Digital Presence</h4>
-											<p class="barsa-desc m-0 small">
-												Copywriting, Social Media, Marketing
-											</p>
+											<p class="barsa-desc m-0 small">Copywriting, Marketing</p>
 										</article>
 									</div>
 								</div>
@@ -266,15 +295,11 @@
 				</div>
 			</section>
 			<!-- barsa about 3 -->
-			<section class="barsa-about padding-y-80">
+			<section class="barsa-about" style="padding-bottom: 80px">
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-md-6 position-relative">
-							<img
-								src="assets/images/gif/Version control.gif"
-								alt="About "
-								class="gifAnimate"
-							/>
+							<img src="assets/images/gif/Version control.gif" alt="About " />
 						</div>
 						<div class="col-md-6 ps-4 position-relative z-3">
 							<h2
@@ -366,12 +391,11 @@
 					</div>
 				</div>
 			</section>
-
 			<!-- About with counters -->
 			<section
 				id="about"
-				class="barsa-about progress-text barsa-cut position-relative padding-y-80"
-				style="margin-bottom: 80px"
+				class="barsa-about progress-text barsa-cut position-relative"
+				style="margin-bottom: 80px; padding-top: 50px; padding-bottom: 50px"
 			>
 				<div class="container position-relative z-3">
 					<div class="row align-items-center">
@@ -487,9 +511,8 @@
 					<span></span>
 				</div>
 			</section>
-
 			<!-- barsa technologies -->
-			<section id="projects" class="projects py-5">
+			<section id="projects" class="projects">
 				<div class="container">
 					<div class="row appendProject">
 						<div class="col mt-5 projectContainer">
@@ -580,7 +603,8 @@
 			<!-- Contact US Form -->
 			<section
 				id="contact"
-				class="InfoSection barsa-cut-reverse margin-y-80 mb-0 padding-y-80 position-relative"
+				class="InfoSection barsa-cut-reverse position-relative"
+				style="padding-top: 50px; padding-bottom: 50px"
 			>
 				<div class="container position-relative z-3">
 					<div class="row align-items-center">
@@ -621,7 +645,7 @@
 						</div>
 						<div class="col-md-5">
 							<!-- barsa form -->
-							<form class="form1" onsubmit="return false">
+							<form id="contact-form" class="form1" onsubmit="return false">
 								<article class="mb-5">
 									<h3
 										class="m-0 barsa-h3"
@@ -641,27 +665,38 @@
 									<div class="col-md-12">
 										<div class="inputSingle">
 											<i class="fa-solid fa-user"></i>
-											<input type="text" name="name" placeholder="Name" />
+											<input
+												type="text"
+												name="name"
+												placeholder="Contact Name"
+												required
+											/>
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="inputSingle">
 											<i class="fa-solid fa-envelope"></i>
-											<input type="email" name="email" placeholder="Email" />
+											<input
+												type="text"
+												name="company"
+												placeholder="Company Name"
+											/>
 										</div>
 									</div>
 									<div class="col-md-12">
 										<div class="inputSingle">
-											<i class="fa-solid fa-phone-volume"></i>
+											<i class="fa-solid fa-envelope"></i>
 											<input
-												type="digits"
-												name="phone"
-												placeholder="Phone No"
+												type="email"
+												name="email"
+												placeholder="Email"
+												required
 											/>
 										</div>
 									</div>
 								</div>
 								<button
+									type="submit"
 									class="barsa-button2 mt-4"
 									id="sub"
 									data-lang-en="Submit Request"
@@ -676,7 +711,7 @@
 				</div>
 				<!-- bg -->
 				<div class="bg">
-					<img src="assets/images/header/infoBG.jpg" alt="Overlay" />
+					<img src="assets/images/backgrounds/infoBG.jpg" alt="Overlay" />
 				</div>
 			</section>
 
@@ -854,7 +889,172 @@
 					<div class="testimonial-pagination"></div>
 				</div>
 			</section>
+			<!-- barsa faq section -->
+			<section class="faqs margin-y-80">
+				<h2 class="barsa-h2 dark text-center">Frequently Asked questions</h2>
+				<p class="barsa-desc text-center">
+					We develop the relationshittps that underpin the next phase in your
+					organisation's <br />growth. We do this by discerning the We develop
+					the relationships
+				</p>
 
+				<div class="container">
+					<!-- FAQs -->
+					<div class="mt-5 accordion accordion-flush" id="barsaFaq">
+						<div class="accordion-item active">
+							<div
+								class="faqIcon"
+								data-bs-toggle="collapse"
+								data-bs-target="#faq1"
+							></div>
+							<!-- faq 1 header -->
+
+							<div class="flex-grow-1">
+								<h2 class="accordion-header">
+									<button
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#faq1"
+										aria-expanded="false"
+										aria-controls="#faq1"
+									>
+										What Services Does Porto Nexus Offer
+									</button>
+								</h2>
+
+								<!-- faq 1 body -->
+								<div id="faq1" data-bs-parent="#barsaFaq" class="collapse show">
+									<div class="accordion-body">
+										We offer a comprehensive range of digital marketing services
+										tailored to boost your online presence and drive business
+										growth. Our services include SEO (Search Engine
+										Optimization) to improve your website's visibility on search
+										engines, PPC (Pay-Per-Click) advertising to generate
+										targeted traffic, social media management to engage with
+										your audience, and content marketing to build brand
+										authority. Whether you're looking to increase website
+										traffic or enhance your brand's digital identity, our expert
+										team has you covered
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div
+								class="faqIcon"
+								data-bs-toggle="collapse"
+								data-bs-target="#faq2"
+							></div>
+							<div class="flex-grow-1">
+								<!-- faq 2 header -->
+								<h2 class="accordion-header">
+									<button
+										type="button"
+										class="collapsed"
+										data-bs-toggle="collapse"
+										data-bs-target="#faq2"
+										aria-expanded="false"
+										aria-controls="#faq2"
+									>
+										How Can I Improve My Website's Rank on Google Search?
+									</button>
+								</h2>
+
+								<!-- faq 2 body -->
+								<div id="faq2" data-bs-parent="#barsaFaq" class="collapse">
+									<div class="accordion-body">
+										Porto Nexus specializes in advanced SEO strategies designed
+										to elevate your website's ranking on search engines like
+										Google. We conduct thorough keyword research, optimize
+										on-page content, and implement technical SEO enhancements to
+										ensure your website is not only visible but also highly
+										competitive in your industry. Our goal is to increase
+										organic traffic, improve user experience, and ultimately
+										drive more conversions through effective SEO practices.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div
+								class="faqIcon"
+								data-bs-toggle="collapse"
+								data-bs-target="#faq3"
+							></div>
+							<div class="flex-grow-1">
+								<!-- faq 3 header -->
+								<h2 class="accordion-header">
+									<button
+										type="button"
+										class="collapsed"
+										data-bs-toggle="collapse"
+										data-bs-target="#faq3"
+										aria-expanded="false"
+										aria-controls="#faq3"
+									>
+										Why Should I Choose Porto Nexus for My Digital Marketing
+										Needs?
+									</button>
+								</h2>
+
+								<!-- faq 3 body -->
+								<div id="faq3" data-bs-parent="#barsaFaq" class="collapse">
+									<div class="accordion-body">
+										Choosing Porto Nexus means partnering with a team of
+										experienced digital marketing professionals dedicated to
+										your success. We pride ourselves on delivering customized
+										strategies that align with your business goals. Our approach
+										combines data-driven insights with creative solutions to
+										ensure that your brand stands out in a crowded digital
+										marketplace. From boosting your online presence to managing
+										your social media channels, Porto Nexus is committed to
+										helping you achieve measurable results.
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<div
+								class="faqIcon"
+								data-bs-toggle="collapse"
+								data-bs-target="#faq4"
+							></div>
+							<div class="flex-grow-1">
+								<!-- faq 4 header -->
+								<h2 class="accordion-header">
+									<button
+										type="button"
+										class="collapsed"
+										data-bs-toggle="collapse"
+										data-bs-target="#faq4"
+										aria-expanded="false"
+										aria-controls="#faq4"
+									>
+										How Does Porto Nexus Ensure a High ROI on Digital Marketing
+										Campaigns?
+									</button>
+								</h2>
+
+								<!-- faq 4 body -->
+								<div id="faq4" data-bs-parent="#barsaFaq" class="collapse">
+									<div class="accordion-body">
+										We focus on delivering a high return on investment (ROI) for
+										all our digital marketing campaigns. We do this by carefully
+										analyzing your target audience, selecting the most effective
+										marketing channels, and continuously optimizing our
+										strategies based on performance data. Our campaigns are
+										designed to maximize your marketing budget, driving quality
+										leads and conversions while minimizing costs. Whether
+										through SEO, PPC, or social media marketing, our goal is to
+										ensure that every dollar you spend contributes to your
+										business growth.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<!-- footer section -->
 			<footer class="pt-5 mb-0">
 				<div class="container position-relative z-3">
@@ -878,9 +1078,9 @@
 							class="barsa-button3 d-flex align-items-center"
 						>
 							<span
-								data-lang-en="Contact Us"
-								data-lang-fr="Contactez-nous"
-								data-lang-pt="Fala Connosco"
+								data-lang-en="Let's Connect"
+								data-lang-fr="Let's Connect"
+								data-lang-pt="Let's Connect"
 							>
 							</span>
 							<span
@@ -939,7 +1139,26 @@
 				langButtons['pt'].addEventListener('click', () => setLanguage('pt'));
 			});
 		</script>
+		<!-- Form script -->
+		<script type="text/javascript">
+			document
+				.getElementById('contact-form')
+				.addEventListener('submit', function (event) {
+					event.preventDefault(); // Prevent the form from submitting the traditional way
 
+					// Use the sendForm method to send the form data
+					emailjs.sendForm('service_8i01g6k', 'template_ihc2p1o', this).then(
+						function (response) {
+							console.log('SUCCESS!', response.status, response.text);
+							alert('Your message has been sent successfully!');
+						},
+						function (error) {
+							console.log('FAILED...', error);
+							alert('Failed to send your message. Please try again later.');
+						}
+					);
+				});
+		</script>
 		<!-- error -->
 		<div id="error"></div>
 		<!-- jQuery -->
@@ -950,8 +1169,6 @@
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<!-- Shadder effect script -->
 		<script src="assets/dist/lib/swiperSlider/swiper-gl.min.js"></script>
-		<!-- circle text -->
-		<script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
 		<!-- gsap -->
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 		<!-- gsap scrollTrigger -->
@@ -960,10 +1177,7 @@
 		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
 		<!-- Smooth Scrollbar -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"></script>
-		<!-- Marquee -->
-		<script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
 		<!-- Theme Files -->
 		<script src="assets/dist/theme/js/barsa.js"></script>
-		<script src="assets/dist/theme/js/popup/custom.js"></script>
 	</body>
 </html>

@@ -1,27 +1,4 @@
 $(document).ready(function () {
-	var loader = 100;
-	var i = 0;
-
-	var interval = setInterval(function () {
-		if (i <= loader) {
-			$('.loaderBar').css('height', i + '%');
-			$('.loaderText').css('height', i + '%');
-			$('.loaderText').text(i + '%');
-			i++;
-		} else {
-			clearInterval(interval);
-			$('.loader').addClass('loaded');
-
-			setTimeout(function () {
-				$('.popUpmain').addClass('d-flex');
-				setTimeout(function () {
-					$('.popWrapper').removeClass('slideTopRev');
-					$('.popWrapper').addClass('slideTop');
-				});
-			}, 3000);
-		}
-	}, 50);
-
 	$('nav').addClass('transitionNav');
 
 	$('body').append(
@@ -70,33 +47,6 @@ $(document).ready(function () {
 	});
 	scrollbar.addListener(ScrollTrigger.update);
 	ScrollTrigger.defaults({ scroller: ScrollArea });
-
-	gsap.utils.toArray('.gifAnimate').forEach((gif) => {
-		let showGif = gsap.timeline({
-			scrollTrigger: {
-				trigger: gif,
-				start: 'top center',
-				onEnter: () => gif.classList.add('d-block'),
-			},
-		});
-	});
-
-	gsap.utils.toArray('.pricingSingle img').forEach((img) => {
-		let showGif = gsap.timeline({
-			scrollTrigger: {
-				trigger: '.progress-text',
-				scrub: true,
-				start: 'bottom center',
-			},
-		});
-
-		showGif.from(img, {
-			opacity: 0,
-			scale: 0.5,
-			x: -100,
-			y: 100,
-		});
-	});
 
 	let slideLeft = gsap.timeline({
 		scrollTrigger: {
@@ -181,10 +131,6 @@ $(document).ready(function () {
 		});
 	});
 
-	$('.hamMenu').on('click', function () {
-		$(this).children('.hamContent').toggleClass('revealHam');
-	});
-
 	$('.barsa-button3').mousemove(function (event) {
 		var mouseX = event.pageX - $(this).offset().left;
 		var mouseY = event.pageY - $(this).offset().top;
@@ -202,31 +148,6 @@ $(document).ready(function () {
 
 	$('.barsa-button3').mouseleave(function () {
 		$(this).css({ top: 0 + 'px', left: 0 + 'px' });
-	});
-
-	var team = new Swiper('.teamSlider', {
-		slidesPerView: 3,
-		spaceBetween: 24,
-		navigation: {
-			nextEl: '.team-next',
-			prevEl: '.team-prev',
-		},
-		breakpoints: {
-			1024: {
-				slidesPerView: 3,
-				spaceBetween: 18,
-			},
-
-			576: {
-				slidesPerView: 2,
-				spaceBetween: 18,
-			},
-
-			320: {
-				slidesPerView: 1,
-				spaceBetween: 12,
-			},
-		},
 	});
 
 	var testimonials = new Swiper('.testimonialsSlider', {
@@ -269,88 +190,5 @@ $(document).ready(function () {
 
 	$('#barsaFaq').on('hide.bs.collapse', function (e) {
 		$(e.target).closest('.accordion-item').removeClass('active');
-	});
-
-	$('.addP').on('click', function () {
-		var totalProject = $('.projectSingle').length;
-
-		if (totalProject == 8) {
-			$('#error').css('display', 'block');
-			$('#error').text('Limit Reached');
-
-			setTimeout(function () {
-				$('#error').css('display', 'none');
-			}, 1000);
-		} else {
-			const newElement = `
-      <div class="col mt-5">
-        <div class="projectSingle">
-          <img
-            class="ProjectIcon"
-            src="assets/images/projects/${totalProject + 1}.png"
-            alt="ProjectIcon"
-          />
-        </div>
-      </div>
-    `;
-
-			var appendHere = $('.appendProject');
-
-			appendHere.append(newElement);
-		}
-	});
-
-	$('.startplay').on('click', function () {
-		const getParent = $(this).closest('.video-block');
-		const getVideo = getParent.find('iframe');
-		getVideo.css('display', 'block');
-		getParent.find('.close').css('display', 'block');
-		var symbol = getVideo[0].src.indexOf('?') > -1 ? '&' : '?';
-
-		// Check if autoplay parameter already exists
-		if (getVideo[0].src.indexOf('autoplay') === -1) {
-			getVideo[0].src += symbol + 'autoplay=1';
-		} else {
-			getVideo[0].src = getVideo[0].src.replace(/autoplay=0/, 'autoplay=1');
-		}
-	});
-
-	$('.close').on('click', function () {
-		const getParent = $(this).closest('.video-block');
-		const getVideo = getParent.find('iframe');
-		getVideo.css('display', 'none');
-
-		var symbol = getVideo[0].src.indexOf('?') > -1 ? '&' : '?';
-
-		// Check if autoplay parameter already exists
-		if (getVideo[0].src.indexOf('autoplay') === -1) {
-			getVideo[0].src += symbol + 'autoplay=0';
-		} else {
-			getVideo[0].src = getVideo[0].src.replace(/autoplay=1/, 'autoplay=0');
-		}
-
-		$(this).css('display', 'none');
-	});
-
-	$('#sub').on('click', function () {
-		// form submission
-		var dataString = $('.form1').serialize();
-
-		$(this).html('Wait..');
-
-		// send form to send.php
-		$.ajax({
-			type: 'POST',
-			url: 'assets/dist/form handling/send.php',
-			data: dataString,
-			processData: false,
-			contentType: false,
-			success: function (data, status) {
-				$(this).html('Success!');
-			},
-			error: function (data, status) {
-				$(this).html('failed!');
-			},
-		});
 	});
 });
