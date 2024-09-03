@@ -1,0 +1,488 @@
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .logo h1 {
+    font-size: 35px;
+  }
+  .logo .logo-dot {
+    font-size: 60px;
+    bottom: -3px;
+    right: -15px;
+  }
+  .logo img {
+    width: 28px;
+  }
+  .barsa-nav {
+    padding: 0 60px;
+  }
+  .header-Nav.gap-5 {
+    gap: 25px !important;
+  }
+  .barsa-button {
+    padding: 0 20px;
+    font-size: 12px;
+    height: 45px;
+  }
+  .hamMenu {
+    width: 45px;
+    height: 45px;
+  }
+  .hamMenu span {
+    width: 15px;
+    height: 2px;
+  }
+  .more {
+    gap: 35px;
+  }
+  .barsa-nav .header-Nav li a {
+    padding: 35px 0;
+  }
+  .tag {
+    font-size: 12px;
+    padding: 0 23px;
+    height: 30px;
+  }
+  .barsa-h3.big {
+    font-size: 42px;
+  }
+  .rating {
+    gap: 20px;
+  }
+  .stars {
+    font-size: 14px;
+  }
+  .barsa-h1 {
+    font-size: 80px;
+  }
+  .barsa-desc {
+    font-size: 18px;
+  }
+
+  .next-prev {
+    align-items: end;
+    height: 110%;
+    width: 100%;
+  }
+  .testimonialSingle {
+    padding: 30px;
+  }
+  .testimonialSingle .barsa-desc {
+    font-size: 16px;
+  }
+  .aboutTestimonials {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .barsa-h2 {
+    font-size: 45px;
+  }
+  .barsa-list li {
+    font-size: 14px;
+  }
+  .barsa-list li i {
+    font-size: 14px;
+  }
+  header .logo span {
+    display: none;
+  }
+  .barsa-nav .header-Nav li a {
+    font-size: 14px;
+    padding: 25px 0;
+  }
+  .header-Nav.gap-5 {
+    gap: 20px !important;
+  }
+  .socialMedia {
+    display: none !important;
+  }
+  .more {
+    gap: 20px;
+  }
+  .barsa-nav {
+    padding: 0 40px;
+  }
+  .hamContent {
+    padding: 15px 25px;
+  }
+  .barsa-list3 li i {
+    font-size: 12px;
+  }
+  .barsa-list3 li a {
+    font-size: 18px;
+  }
+  .barsa-h1 {
+    font-size: 60px;
+  }
+  .barsa-desc {
+    font-size: 16px;
+  }
+  .form1 {
+    padding: 40px 35px;
+  }
+  .barsa-h3 {
+    font-size: 30px;
+  }
+  .inputSingle {
+    height: 50px;
+  }
+  .serviceSingle {
+    padding: 0 30px;
+    height: 100px;
+  }
+  .barsa-h4 {
+    font-size: 20px;
+  }
+  .barsa-desc.small {
+    font-size: 14px;
+  }
+  .barsa-list2 li img {
+    margin-right: 10px;
+    width: 20px;
+  }
+  .barsa-list2 li {
+    font-size: 15px;
+  }
+  .counter {
+    font-size: 15px;
+  }
+  .counter::before {
+    width: 30px;
+    height: 30px;
+  }
+  .star::before {
+    font-size: 50px;
+  }
+  .counter .count {
+    font-size: 60px;
+  }
+  .barsa-desc2 {
+    font-size: 24px;
+  }
+  .quickInfo {
+    padding: 30px 50px;
+  }
+  .member {
+    height: 450px;
+  }
+  .member:hover {
+    padding: 50px 30px;
+  }
+  .memberDetails .barsa-desc {
+    width: 120px;
+    height: 40px;
+  }
+  .memberDetails span {
+    width: 100px;
+    height: 30px;
+  }
+  .testimonialSingle {
+    padding: 20px;
+  }
+  .stars {
+    margin-bottom: 15px;
+  }
+  .testimonialSingle .barsa-desc {
+    font-size: 12px;
+  }
+  .aboutTestimonials h6 {
+    font-size: 14px;
+  }
+  .aboutTestimonials p {
+    font-size: 10px;
+  }
+  .accordion-header button {
+    font-size: 18px;
+  }
+  .accordion-item.active {
+    height: 230px;
+  }
+  .accordion-body {
+    padding: 15px 30px;
+  }
+  .projectSingle .ProjectIcon {
+    width: 50px;
+  }
+  .blocks.py-5 {
+    padding: 20px 0 !important;
+  }
+  .copyright {
+    height: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .form1 {
+    padding: 20px 15px;
+  }
+  .form1 .mb-5 {
+    margin-bottom: 15px !important;
+  }
+  .inputSingle {
+    height: 40px;
+  }
+  .inputSingle i,
+  .inputSingle input {
+    font-size: 14px;
+  }
+  .barsa-h5.my-4 {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  .form1 {
+    border-radius: 0;
+  }
+  .playBtn {
+    margin-bottom: 15px;
+  }
+  .barsa-h2 {
+    font-size: 30px;
+  }
+  .barsa-list li,
+  .barsa-list li i {
+    font-size: 12px;
+  }
+  .barsa-button3 {
+    font-size: 16px;
+    height: 40px;
+  }
+  .barsa-button2 {
+    width: 100%;
+  }
+  .serviceSingle {
+    padding: 0 15px;
+    border-radius: 0;
+  }
+  .barsa-h4 {
+    font-size: 16px;
+  }
+  .barsa-desc.small {
+  }
+  .barsa-list2 li {
+    font-size: 12px;
+  }
+  .barsa-list2 li img {
+    width: 12px;
+    margin-right: 5px;
+  }
+  .counter .count {
+    font-size: 40px;
+  }
+  .counter {
+    font-size: 12px;
+  }
+  .star::before {
+    font-size: 30px;
+  }
+  .wrapper {
+    width: 90%;
+    padding: 15px 0;
+  }
+  .barsa-button4 {
+    padding: 0 10px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .info.mt-4 {
+    margin-top: 15px !important;
+  }
+  .pricingSingle {
+    height: auto;
+  }
+  .goTo {
+    display: none;
+  }
+  .barsa-h1 {
+    font-size: 40px;
+  }
+  .emailLink {
+    font-size: 18px;
+  }
+  .barsa-desc2 {
+    width: 90%;
+    font-size: 18px;
+  }
+  .barsa-h3.ms-5,
+  .barsa-desc2.ms-5,
+  .barsa-button3.ms-5 {
+    margin-left: 30px !important;
+  }
+  .quickInfo {
+    padding: 20px 20px;
+  }
+  .barsa-h3 {
+    font-size: 20px;
+  }
+  .accordion-header {
+    padding: 15px;
+  }
+  .accordion-header button {
+    font-size: 15px;
+  }
+  .accordion-body {
+    font-size: 12px;
+  }
+  .faqIcon {
+    min-width: 60px;
+  }
+  .projectSingle .ProjectIcon {
+    width: 40px;
+  }
+  .barsa-list3 {
+    gap: 10px;
+  }
+  .barsa-list3 li a {
+    font-size: 12px;
+  }
+  .barsa-button3 {
+    padding: 0 25px;
+  }
+  .footer-h4 {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .logo.light.mb-4 {
+    margin: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .gifAnimate {
+    display: none !important;
+  }
+  .tab-none {
+    display: none;
+  }
+  .tab-50 {
+    width: 50%;
+  }
+  .tab-100 {
+    width: 100%;
+  }
+  .barsa-desc {
+    width: 100% !important;
+  }
+  .barsa-h6 {
+    font-size: 12px;
+  }
+  .counter {
+    font-size: 10px;
+  }
+  .counter .count {
+    font-size: 24px;
+  }
+  .InfoSection .row {
+    align-items: center;
+  }
+  .projectSingle .ProjectIcon {
+    width: 20px;
+  }
+  .address {
+    margin-top: 25px;
+  }
+  .desktopNav {
+    display: none !important;
+  }
+  .barsa-nav {
+    padding: 20px 40px;
+  }
+  .mobileNav {
+    display: flex !important;
+  }
+  .mobileNav ul {
+    flex-direction: column;
+  }
+  .mobileNav ul li a {
+    padding: 0 !important;
+    color: var(--text-color) !important;
+  }
+  .barsa-h2.small {
+    font-size: 40px;
+  }
+  .padding-y-80 {
+    padding: 50px 0;
+  }
+  .margin-y-80 {
+    margin: 50px 0;
+  }
+}
+@media (max-width: 576px) {
+  .more {
+    display: none;
+  }
+  .barsa-nav {
+    padding: 20px 20px;
+  }
+  .tranformX-15 {
+    transform: none;
+  }
+  .sm-none {
+    display: none;
+  }
+  .sm-100 {
+    width: 100%;
+  }
+  .sm-30 {
+    width: 30%;
+  }
+  .sm-70 {
+    width: 70%;
+  }
+  .sm-50 {
+    width: 50%;
+  }
+  .sm-50.nStar::before {
+    display: none;
+  }
+  .barsa-desc {
+    font-size: 14px;
+  }
+  .barsa-h1 {
+    font-size: 35px;
+  }
+  .counter {
+    margin: 20px;
+  }
+  .info {
+    font-size: 12px;
+  }
+  #barsaFaq {
+    width: 100%;
+  }
+  .accordion-body {
+    font-size: 10px;
+  }
+  .accordion-header,
+  .accordion-body {
+    padding: 10px;
+  }
+  .accordion-header button {
+    font-size: 12px;
+  }
+  .emailLink {
+    text-align: start !important;
+  }
+  .barsa-h2.small {
+    font-size: 30px;
+  }
+  .wrapper {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .logoDiv.wrapper {
+    width: 100% !important;
+    display: none !important;
+  }
+  .blocks .wrapper {
+    margin-top: 0;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+}
