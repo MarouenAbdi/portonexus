@@ -13479,7 +13479,9 @@ html[xmlns] .clearfix {
 
 .bg-color-dark--100,
 .bg-dark--100 {
-	background-color: var(--dark--100) !important;
+	background-color: var(--default) !important;
+	color: black;
+	border-radius: 10px;
 }
 
 .bg-color-dark--200,
@@ -19619,4 +19621,8 @@ html.gap-outside
 	.container-fluid {
 	padding-left: 25px;
 	padding-right: 25px;
+}
+
+.lets-talk-btn {
+	font-size: 30px;
 }

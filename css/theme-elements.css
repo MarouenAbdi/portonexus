@@ -22828,7 +22828,7 @@ small,
 
 /* Paragraphs */
 p {
-	color: var(--default);
+	color: white;
 	line-height: 26px;
 	margin: 0 0 20px;
 }
