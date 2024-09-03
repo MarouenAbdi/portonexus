@@ -314,12 +314,11 @@ li {
 }
 
 .stars {
-	display: flex;
-	align-items: center;
-	gap: 4px;
-	font-size: 16px;
-	color: rgb(44, 195, 146);
-	margin-bottom: 30px;
+	display: none;
+}
+
+.border-radius-10 {
+	border-radius: 10px;
 }
 
 .barsa-desc {
