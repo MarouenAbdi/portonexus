@@ -1,6 +1,6 @@
 function changeLanguage(lang) {
 	// Load the language file
-	fetch(`js/translation/${lang}.json`)
+	fetch(`/js/translation/${lang}.json`)
 		.then((response) => response.json())
 		.then((translationData) => {
 			// Get all elements with the data-translate attribute
