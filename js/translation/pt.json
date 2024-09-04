@@ -68,5 +68,6 @@
 	"your_email_placeholder": "Seu endereço de e-mail",
 	"subject_placeholder": "Assunto",
 	"message_placeholder": "Mensagem",
-	"send_message_button": "Enviar Mensagem"
+	"send_message_button": "Enviar Mensagem",
+	"customers_count_heading": "100 clientes e contando..."
 }
