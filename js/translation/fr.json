@@ -52,5 +52,21 @@
 	"seo_heading": "Dominez les classements des moteurs de recherche",
 	"seo_paragraph": "Saviez-vous que la plupart des clients potentiels recherchent en ligne avant de prendre une décision ? Sans une optimisation forte du classement, votre entreprise pourrait être invisible.",
 	"ads_heading": "Créez des publicités efficaces qui convertissent",
-	"ads_paragraph": "Vous voulez voir des résultats immédiats ? Nos services de création et de gestion de publicités ciblées placent votre marque devant les bonnes personnes au bon moment. Nous concevons des publicités qui attirent plus de clients."
+	"ads_paragraph": "Vous voulez voir des résultats immédiats ? Nos services de création et de gestion de publicités ciblées placent votre marque devant les bonnes personnes au bon moment. Nous concevons des publicités qui attirent plus de clients.",
+	"breadcrumb_home": "ACCUEIL",
+	"breadcrumb_contact_us": "CONTACTEZ-NOUS",
+	"contact_us_heading": "Contactez-Nous",
+	"send_email_label": "ENVOYER UN E-MAIL",
+	"book_call_label": "Réservez un appel",
+	"book_call_info": "Choisissez un créneau disponible pour planifier un appel avec nous",
+	"send_message_heading": "Envoyez-nous un message",
+	"message_success": "Succès!",
+	"message_success_info": "Votre message nous a été envoyé.",
+	"message_error": "Erreur!",
+	"message_error_info": "Une erreur est survenue lors de l'envoi de votre message.",
+	"your_name_placeholder": "Votre nom",
+	"your_email_placeholder": "Votre adresse e-mail",
+	"subject_placeholder": "Sujet",
+	"message_placeholder": "Message",
+	"send_message_button": "Envoyer le message"
 }

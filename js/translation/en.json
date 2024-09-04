@@ -52,5 +52,21 @@
 	"seo_heading": "Dominate Search Engine Rankings",
 	"seo_paragraph": "Did you know that most potential customers search online before making a decision? Without strong search ranking optimization, your business could be invisible.",
 	"ads_heading": "Run Effective Ads that Convert",
-	"ads_paragraph": "Want to see immediate results? Our targeted ad creation and management services get your brand in front of the right people at the right time. We design ads that bring in more customers."
+	"ads_paragraph": "Want to see immediate results? Our targeted ad creation and management services get your brand in front of the right people at the right time. We design ads that bring in more customers.",
+	"breadcrumb_home": "HOME",
+	"breadcrumb_contact_us": "CONTACT US",
+	"contact_us_heading": "Contact Us",
+	"send_email_label": "SEND AN EMAIL",
+	"book_call_label": "Book a call",
+	"book_call_info": "Choose an available slot to schedule a call with us",
+	"send_message_heading": "Send Us a Message",
+	"message_success": "Success!",
+	"message_success_info": "Your message has been sent to us.",
+	"message_error": "Error!",
+	"message_error_info": "There was an error sending your message.",
+	"your_name_placeholder": "Your Name",
+	"your_email_placeholder": "Your E-mail Address",
+	"subject_placeholder": "Subject",
+	"message_placeholder": "Message",
+	"send_message_button": "Send Message"
 }

@@ -173,12 +173,21 @@
 											<a
 												href="../index.html"
 												class="text-color-primary text-decoration-none"
+												data-translate="breadcrumb_home"
 												>HOME</a
 											>
 										</li>
-										<li class="text-color-primary active">CONTACT US</li>
+										<li
+											class="text-color-primary active"
+											data-translate="breadcrumb_contact_us"
+										>
+											CONTACT US
+										</li>
 									</ul>
-									<h1 class="text-color-light font-weight-bold text-10">
+									<h1
+										class="text-color-light font-weight-bold text-10"
+										data-translate="contact_us_heading"
+									>
 										Contact Us
 									</h1>
 								</div>
@@ -233,6 +242,7 @@
 									<div class="col-auto">
 										<h3
 											class="d-block text-color-grey positive-ls-3 font-weight-medium text-2 mb-1"
+											data-translate="send_email_label"
 										>
 											SEND AN EMAIL
 										</h3>
@@ -252,11 +262,13 @@
 							>
 								<h3
 									class="d-block text-color-grey positive-ls-3 font-weight-medium text-2 mb-1"
+									data-translate="book_call_label"
 								>
 									Book a call
 								</h3>
 								<span
 									class="d-flex align-items-center text-color-dark font-weight-bold text-3-5"
+									data-translate="book_call_info"
 								>
 									Choose an available slot to schedule a call with us
 								</span>
@@ -268,7 +280,10 @@
 								data-appear-animation="fadeInUpShorterPlus"
 								data-appear-animation-delay="300"
 							>
-								<h2 class="font-weight-bold text-color-dark text-6 mb-3">
+								<h2
+									class="font-weight-bold text-color-dark text-6 mb-3"
+									data-translate="send_message_heading"
+								>
 									Send Us a Message
 								</h2>
 								<form
@@ -279,14 +294,19 @@
 									<div
 										class="contact-form-success alert alert-success d-none mt-4"
 									>
-										<strong>Success!</strong> Your message has been sent to us.
+										<strong data-translate="message_success">Success!</strong>
+										<span data-translate="message_success_info"
+											>Your message has been sent to us.</span
+										>
 									</div>
 
 									<div
 										class="contact-form-error alert alert-danger d-none mt-4"
 									>
-										<strong>Error!</strong> There was an error sending your
-										message.
+										<strong data-translate="message_error">Error!</strong>
+										<span data-translate="message_error_info"
+											>There was an error sending your message.</span
+										>
 										<span class="mail-error-message text-1 d-block"></span>
 									</div>
 
@@ -301,6 +321,7 @@
 												name="name"
 												placeholder="Your Name"
 												required
+												data-translate-placeholder="your_name_placeholder"
 											/>
 										</div>
 									</div>
@@ -316,6 +337,7 @@
 												name="email"
 												placeholder="Your E-mail Address"
 												required
+												data-translate-placeholder="your_email_placeholder"
 											/>
 										</div>
 									</div>
@@ -330,6 +352,7 @@
 												name="subject"
 												placeholder="Subject"
 												required
+												data-translate-placeholder="subject_placeholder"
 											/>
 										</div>
 									</div>
@@ -343,6 +366,7 @@
 												name="message"
 												placeholder="Message"
 												required
+												data-translate-placeholder="message_placeholder"
 											></textarea>
 										</div>
 									</div>
@@ -351,6 +375,7 @@
 											<button
 												type="submit"
 												class="btn btn-modern btn-dark w-100 font-weight-semibold text-capitalize text-3 py-3 anim-hover-translate-top-5px transition-2ms mb-5 mb-lg-0"
+												data-translate="send_message_button"
 											>
 												<span class="px-4 d-block ws-nowrap"
 													>Send Message
@@ -390,13 +415,17 @@
 					<div class="row pt-5">
 						<div class="col-lg-6 mt-5 pt-3" style="z-index: 1">
 							<div class="logo-text pb-5">
-								<a href="/index.html"><h1>Porto Nexus</h1></a>
+								<a href="/index.html">
+									<h1 data-translate="footer_site_name">Porto Nexus</h1>
+								</a>
 							</div>
 							<a
 								href="mailto:contact@portonexus.com"
 								class="pb-5 d-inline-flex align-items-center text-decoration-none text-color-light text-color-hover-primary font-weight-semibold text-4-5"
-								>contact@portonexus.com</a
+								data-translate="footer_email"
 							>
+								contact@portonexus.com
+							</a>
 							<ul
 								class="social-icons social-icons-clean social-icons-medium mb-5"
 							>
@@ -436,8 +465,8 @@
 						</div>
 						<div class="col-lg-6 mt-5 pt-3" style="z-index: 1">
 							<div class="logo-text">
-								<h1>Our Mission</h1>
-								<p>
+								<h1 data-translate="our_mission_title">Our Mission</h1>
+								<p data-translate="our_mission_text">
 									At Porto Nexus, our mission is to create innovative digital
 									experiences that captivate and inspire. We empower brands with
 									strategic design and technology, helping them connect with
@@ -455,6 +484,7 @@
 							<div class="col-lg-6 mt-4">
 								<p
 									class="text-start text-3-5 font-weight-semi-bold text-light mb-0"
+									data-translate="footer_copyright"
 								>
 									Porto Nexus © 2024. All Rights Reserved.
 								</p>
@@ -499,6 +529,51 @@
 				</div>
 			</footer>
 		</div>
+
+		<!-- Translation Script -->
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const defaultLang = 'en';
+				const userLang = navigator.language || navigator.userLanguage;
+				const lang = userLang.startsWith('fr')
+					? 'fr'
+					: userLang.startsWith('pt')
+					? 'pt'
+					: defaultLang;
+
+				const langButtons = {
+					en: document.getElementById('lang-en'),
+					fr: document.getElementById('lang-fr'),
+					pt: document.getElementById('lang-pt'),
+				};
+
+				function setLanguage(lang) {
+					document.querySelectorAll('[data-lang-en]').forEach((element) => {
+						element.textContent = element.getAttribute(`data-lang-${lang}`);
+					});
+
+					for (let key in langButtons) {
+						if (key === lang) {
+							langButtons[key].classList.add('disabled');
+							langButtons[key].setAttribute('disabled', 'disabled');
+						} else {
+							langButtons[key].classList.remove('disabled');
+							langButtons[key].removeAttribute('disabled');
+						}
+					}
+				}
+
+				changeLanguage(lang);
+
+				setLanguage(lang);
+
+				langButtons['en'].addEventListener('click', () => setLanguage('en'));
+				langButtons['fr'].addEventListener('click', () => setLanguage('fr'));
+				langButtons['pt'].addEventListener('click', () => setLanguage('pt'));
+			});
+		</script>
+
+		<script src="../js/translation/translate.js"></script>
 
 		<!-- Vendor -->
 		<script src="../vendor/plugins/js/plugins.min.js"></script>

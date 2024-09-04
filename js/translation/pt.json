@@ -52,5 +52,21 @@
 	"seo_heading": "Domine os rankings dos motores de busca",
 	"seo_paragraph": "Você sabia que a maioria dos clientes potenciais pesquisam online antes de tomar uma decisão? Sem uma forte otimização de classificação, seu negócio pode estar invisível.",
 	"ads_heading": "Crie anúncios eficazes que convertem",
-	"ads_paragraph": "Quer ver resultados imediatos? Nossos serviços de criação e gestão de anúncios direcionados colocam sua marca na frente das pessoas certas, no momento certo. Projetamos anúncios que trazem mais clientes."
+	"ads_paragraph": "Quer ver resultados imediatos? Nossos serviços de criação e gestão de anúncios direcionados colocam sua marca na frente das pessoas certas, no momento certo. Projetamos anúncios que trazem mais clientes.",
+	"breadcrumb_home": "INÍCIO",
+	"breadcrumb_contact_us": "FALE CONOSCO",
+	"contact_us_heading": "Fale Conosco",
+	"send_email_label": "ENVIAR UM E-MAIL",
+	"book_call_label": "Agende uma chamada",
+	"book_call_info": "Escolha um horário disponível para agendar uma chamada conosco",
+	"send_message_heading": "Envie-nos uma mensagem",
+	"message_success": "Sucesso!",
+	"message_success_info": "Sua mensagem foi enviada para nós.",
+	"message_error": "Erro!",
+	"message_error_info": "Houve um erro ao enviar sua mensagem.",
+	"your_name_placeholder": "Seu nome",
+	"your_email_placeholder": "Seu endereço de e-mail",
+	"subject_placeholder": "Assunto",
+	"message_placeholder": "Mensagem",
+	"send_message_button": "Enviar Mensagem"
 }
