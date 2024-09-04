@@ -115,6 +115,9 @@
 							</div>
 						</div>
 					</div>
+					<div class="bg">
+						<img src="img/overlay3.png" alt="Overlay" />
+					</div>
 				</div>
 			</header>
 
@@ -381,7 +384,7 @@
 															data-appear-animation="maskUp"
 															data-appear-animation-delay="250"
 														>
-															Graphic<br />Design
+															SEO<br />Audit
 														</h3>
 													</a>
 												</div>
@@ -1381,12 +1384,39 @@
 					<div class="container pb-5">
 						<hr class="bg-color-light opacity-1" />
 						<div class="row">
-							<div class="col-lg-6 mt-4">
+							<div class="col-lg-3 mt-4">
 								<p
 									class="text-start text-3-5 font-weight-semi-bold text-light mb-0"
 								>
 									Porto Nexus © 2024. All Rights Reserved.
 								</p>
+							</div>
+							<div class="col-lg-3 mt-4"></div>
+							<div class="col-lg-3 mt-4">
+								<!-- Language Selection -->
+								<div class="lang-menu">
+									<button id="lang-en" class="lang-button" style="z-index: 1">
+										<img
+											src="img/languages/english-flag.svg"
+											title="English"
+											class="flag-icon"
+										/>
+									</button>
+									<button id="lang-fr" class="lang-button" style="z-index: 1">
+										<img
+											src="img/languages/french-flag.svg"
+											title="Français"
+											class="flag-icon"
+										/>
+									</button>
+									<button id="lang-pt" class="lang-button" style="z-index: 1">
+										<img
+											src="img/languages/pt-flag.svg"
+											title="Português"
+											class="flag-icon"
+										/>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1428,6 +1458,47 @@
 				</div>
 			</footer>
 		</div>
+
+		<!-- Internationalization script -->
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const defaultLang = 'en';
+				const userLang = navigator.language || navigator.userLanguage;
+				const lang = userLang.startsWith('fr')
+					? 'fr'
+					: userLang.startsWith('pt')
+					? 'pt'
+					: defaultLang;
+
+				const langButtons = {
+					en: document.getElementById('lang-en'),
+					fr: document.getElementById('lang-fr'),
+					pt: document.getElementById('lang-pt'),
+				};
+
+				function setLanguage(lang) {
+					document.querySelectorAll('[data-lang-en]').forEach((element) => {
+						element.textContent = element.getAttribute(`data-lang-${lang}`);
+					});
+
+					for (let key in langButtons) {
+						if (key === lang) {
+							langButtons[key].classList.add('disabled');
+							langButtons[key].setAttribute('disabled', 'disabled');
+						} else {
+							langButtons[key].classList.remove('disabled');
+							langButtons[key].removeAttribute('disabled');
+						}
+					}
+				}
+
+				setLanguage(lang);
+
+				langButtons['en'].addEventListener('click', () => setLanguage('en'));
+				langButtons['fr'].addEventListener('click', () => setLanguage('fr'));
+				langButtons['pt'].addEventListener('click', () => setLanguage('pt'));
+			});
+		</script>
 
 		<!-- Vendor -->
 		<script src="vendor/plugins/js/plugins.min.js"></script>

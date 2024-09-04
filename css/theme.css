@@ -19626,3 +19626,32 @@ html.gap-outside
 .lets-talk-btn {
 	font-size: 30px;
 }
+
+.lang-menu {
+	display: flex;
+}
+
+.lang-button {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	border: none;
+	background: none;
+	cursor: pointer;
+	outline: none;
+}
+.lang-button:disabled {
+	cursor: not-allowed;
+}
+
+.flag-icon {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 8px;
+}
+
+.disabled {
+	pointer-events: block;
+	opacity: 0.3;
+}
