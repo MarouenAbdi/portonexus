@@ -1,4 +1,15 @@
 {
 	"site_name": "Porto Nexus",
-	"contact_us": "Contactez-nous"
+	"contact_us": "Contactez-nous",
+	"solutions_heading": "Solutions",
+	"creative_solutions_subheading": "Une entreprise de solutions créatives",
+	"helping_goals_heading": "Vous aider à atteindre les objectifs de l'ère numérique",
+	"brand_development": "Développement de marque",
+	"website_creation": "Création de site web",
+	"search_optimization": "Optimisation du classement de recherche",
+	"digital_marketing": "Marketing numérique",
+	"ai_automation": "Automatisation de l'intelligence artificielle",
+	"logo_design": "Conception de logo",
+	"social_media_management": "Gestion des réseaux sociaux",
+	"ads_creation": "Création de publicités"
 }
