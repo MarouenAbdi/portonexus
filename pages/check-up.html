@@ -572,7 +572,7 @@
 					event.preventDefault();
 
 					// Fetch translations for current language
-					const lang = currentLanguage; // Assuming you have a way to track the current language
+					const lang = navigator.language || navigator.userLanguage;
 					fetch(`/translation/${lang}.json`)
 						.then((response) => response.json())
 						.then((data) => {
@@ -626,10 +626,6 @@
 				};
 
 				function setLanguage(lang) {
-					document.querySelectorAll('[data-lang-en]').forEach((element) => {
-						element.textContent = element.getAttribute(`data-lang-${lang}`);
-					});
-
 					for (let key in langButtons) {
 						if (key === lang) {
 							langButtons[key].classList.add('disabled');
