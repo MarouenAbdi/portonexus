@@ -34,7 +34,7 @@
 	"testimonial_5_name": "Thomas Silva",
 	"footer_site_name": "Porto Nexus",
 	"our_mission_title": "Notre mission",
-	"our_mission_text": "Chez Porto Nexus, notre mission est de créer des expériences numériques innovantes qui captivent et inspirent. Nous aidons les marques à se connecter avec leurs audiences de manière significative grâce à un design stratégique et à la technologie. Notre objectif est de fournir des solutions percutantes qui favorisent la croissance et élèvent les entreprises.",
+	"our_mission_text": "Notre objectif est de renforcer les marques grâce à un design stratégique et à la technologie, en les aidant à établir des liens significatifs avec leurs publics. Nous nous concentrons sur la croissance et l'élévation des entreprises vers de nouveaux sommets.",
 	"footer_copyright": "Porto Nexus © 2024. Tous droits réservés.",
 	"transform_business_heading": "Transformez votre entreprise avec une identité numérique puissante",
 	"transform_business_paragraph": "Votre entreprise mérite plus qu'un simple trafic physique. De nos jours, si votre entreprise n'est pas en ligne, elle est laissée pour compte. Nous créons une présence numérique qui attire plus de clients, augmente vos ventes et élève votre marque.",
@@ -75,5 +75,6 @@
 	"get_free_brand_checkup_button": "Obtenez un Check-up gratuit",
 	"toast_success": "Votre demande a été envoyée avec succès ! Nous vous répondrons dès que possible.",
 	"toast_error": "Échec de l'envoi de la demande. Veuillez réessayer.",
-	"free_checkup": "Check-up Gratuit"
+	"free_checkup": "Check-up Gratuit",
+	"lets_connect": "Entrons en contact"
 }
