@@ -74,5 +74,6 @@
 	"notes_placeholder": "Remarques",
 	"get_free_brand_checkup_button": "Obtenez un Check-up gratuit",
 	"toast_success": "Votre demande a été envoyée avec succès ! Nous vous répondrons dès que possible.",
-	"toast_error": "Échec de l'envoi de la demande. Veuillez réessayer."
+	"toast_error": "Échec de l'envoi de la demande. Veuillez réessayer.",
+	"free_checkup": "Check-up Gratuit"
 }
