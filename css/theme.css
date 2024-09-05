@@ -19612,7 +19612,6 @@ html.gap-outside
 	flex-direction: column;
 	gap: 20px;
 }
-
 .barsa-list4::before {
 	content: '';
 	width: 3px;
@@ -19620,5 +19619,17 @@ html.gap-outside
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: var(--primary-gradiant);
+	background: var(--primary);
+}
+.barsa-list4 li {
+	font-size: 20px;
+	color: var(--text-color);
+	font-weight: bold;
+}
+.barsa-list4 li i {
+	font-size: 19px;
+	background: var(--primary);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-right: 5px;
 }
