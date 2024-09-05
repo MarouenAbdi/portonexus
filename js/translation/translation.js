@@ -41,6 +41,7 @@ function setLanguage(lang) {
 		en: document.getElementById('lang-en'),
 		fr: document.getElementById('lang-fr'),
 		pt: document.getElementById('lang-pt'),
+		es: document.getElementById('lang-es'),
 	};
 
 	for (let key in langButtons) {
@@ -67,6 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		? 'fr'
 		: savedLang.startsWith('pt')
 		? 'pt'
+		: savedLang.startsWith('es')
+		? 'es'
 		: defaultLang;
 
 	setLanguage(lang);
@@ -81,4 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	document
 		.getElementById('lang-pt')
 		.addEventListener('click', () => setLanguage('pt'));
+	document
+		.getElementById('lang-es')
+		.addEventListener('click', () => setLanguage('es'));
 });
