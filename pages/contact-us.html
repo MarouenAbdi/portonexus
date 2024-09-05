@@ -582,12 +582,11 @@
 				.addEventListener('submit', function (event) {
 					event.preventDefault();
 
-					// Fetch translations for current language
 					const lang = (navigator.language || navigator.userLanguage).substring(
 						0,
 						2
 					);
-					fetch(`/translation/${lang}.json`)
+					fetch(`/js/translation/${lang}.json`)
 						.then((response) => response.json())
 						.then((data) => {
 							// Send the email using EmailJS
