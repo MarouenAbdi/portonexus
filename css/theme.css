@@ -17903,7 +17903,7 @@ html body .rounded-circle {
 }
 
 #footer a:not(.btn):not(.no-footer-css).text-color-light:hover {
-	color: var(--light-200) !important;
+	color: var(--primary) !important;
 }
 
 #footer a:not(.btn):not(.no-footer-css).text-color-light:focus,
@@ -19602,4 +19602,23 @@ html.gap-outside
 .disabled {
 	pointer-events: block;
 	opacity: 0.3;
+}
+
+.barsa-list4 {
+	margin-top: 20px !important;
+	position: relative;
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.barsa-list4::before {
+	content: '';
+	width: 3px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: var(--primary-gradiant);
 }
