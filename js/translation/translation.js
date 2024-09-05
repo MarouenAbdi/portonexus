@@ -36,7 +36,7 @@ function changeLanguage(lang) {
 
 // Function to set and save the selected language
 function setLanguage(lang) {
-	localStorage.setItem('selectedLang', lang); // Save selected language in localStorage
+	localStorage.setItem('selectedLang', lang.substring(0, 2)); // Save selected language in localStorage
 	const langButtons = {
 		en: document.getElementById('lang-en'),
 		fr: document.getElementById('lang-fr'),
@@ -58,10 +58,7 @@ function setLanguage(lang) {
 // Initialize language on page load
 document.addEventListener('DOMContentLoaded', () => {
 	const defaultLang = 'en';
-	const systemLang = (navigator.language || navigator.userLanguage).substring(
-		0,
-		2
-	);
+	const systemLang = navigator.language.substring(0, 2);
 
 	// Check if the user has selected a language previously; if not, fall back to system language
 	const savedLang = localStorage.getItem('selectedLang') || systemLang;
