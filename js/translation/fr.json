@@ -64,5 +64,13 @@
 	"subject_placeholder": "Sujet",
 	"message_placeholder": "Message",
 	"send_message_button": "Envoyer le message",
-	"customers_count_heading": "100 clients et ça continue..."
+	"customers_count_heading": "100 clients et ça continue...",
+	"your_business_name_placeholder": "Nom de votre entreprise*",
+	"your_location_placeholder": "Votre emplacement",
+	"your_website_placeholder": "Votre site Web (si vous en avez un)",
+	"your_instagram_placeholder": "Votre Instagram (si vous en avez un)",
+	"your_facebook_placeholder": "Votre Facebook (si vous en avez un)",
+	"your_tiktok_placeholder": "Votre Tiktok (si vous en avez un)",
+	"notes_placeholder": "Remarques",
+	"get_free_brand_checkup_button": "Obtenez un Check-up gratuit"
 }

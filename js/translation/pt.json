@@ -64,5 +64,13 @@
 	"subject_placeholder": "Assunto",
 	"message_placeholder": "Mensagem",
 	"send_message_button": "Enviar Mensagem",
-	"customers_count_heading": "100 clientes e contando..."
+	"customers_count_heading": "100 clientes e contando...",
+	"your_business_name_placeholder": "Nome da sua empresa*",
+	"your_location_placeholder": "Sua localização",
+	"your_website_placeholder": "Seu site (se tiver um)",
+	"your_instagram_placeholder": "Seu Instagram (se tiver um)",
+	"your_facebook_placeholder": "Seu Facebook (se tiver um)",
+	"your_tiktok_placeholder": "Seu Tiktok (se tiver um)",
+	"notes_placeholder": "Notas",
+	"get_free_brand_checkup_button": "Obtenha um Check-up gratuito"
 }

@@ -338,6 +338,12 @@ li {
 	z-index: 1;
 }
 
+.logo-text > a > h1 {
+	color: #fff;
+	margin-left: 5px;
+	margin: 0;
+}
+
 .logo-text > h1 {
 	color: #fff;
 	margin-left: 5px;
