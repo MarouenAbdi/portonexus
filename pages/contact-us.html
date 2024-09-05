@@ -583,7 +583,10 @@
 					event.preventDefault();
 
 					// Fetch translations for current language
-					const lang = navigator.language || navigator.userLanguage;
+					const lang = (navigator.language || navigator.userLanguage).substring(
+						0,
+						2
+					);
 					fetch(`/translation/${lang}.json`)
 						.then((response) => response.json())
 						.then((data) => {

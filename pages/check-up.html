@@ -612,7 +612,10 @@
 		<script>
 			document.addEventListener('DOMContentLoaded', () => {
 				const defaultLang = 'en';
-				const userLang = navigator.language || navigator.userLanguage;
+				const userLang = (
+					navigator.language || navigator.userLanguage
+				).substring(0, 2);
+
 				const lang = userLang.startsWith('fr')
 					? 'fr'
 					: userLang.startsWith('pt')
