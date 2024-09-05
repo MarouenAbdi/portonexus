@@ -338,11 +338,7 @@ li {
 	z-index: 1;
 }
 
-.logo-text > a:hover {
-	text-decoration: none;
-}
-
-.logo-text > a > h1 {
+.logo-text > h1 {
 	color: #fff;
 	margin-left: 5px;
 	margin: 0;
@@ -19570,7 +19566,7 @@ html.gap-outside
 }
 
 .lets-talk-btn {
-	font-size: 28px;
+	font-size: 15px;
 }
 
 .lang-menu {
