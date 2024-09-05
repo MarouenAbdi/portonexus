@@ -72,5 +72,7 @@
 	"your_facebook_placeholder": "Seu Facebook (se tiver um)",
 	"your_tiktok_placeholder": "Seu Tiktok (se tiver um)",
 	"notes_placeholder": "Notas",
-	"get_free_brand_checkup_button": "Obtenha um Check-up gratuito"
+	"get_free_brand_checkup_button": "Obtenha um Check-up gratuito",
+	"toast_success": "Sua solicitação foi enviada com sucesso! Entraremos em contato o mais rápido possível.",
+	"toast_error": "Falha ao enviar a solicitação. Por favor, tente novamente."
 }
