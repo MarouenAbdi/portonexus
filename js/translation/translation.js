@@ -3,6 +3,7 @@ function changeLanguage(lang) {
 	fetch(`/js/translation/${lang}.json`)
 		.then((response) => response.json())
 		.then((data) => {
+			// Update elements with data-translate attributes
 			document.querySelectorAll('[data-translate]').forEach((el) => {
 				const key = el.getAttribute('data-translate');
 				if (data[key]) {
@@ -10,6 +11,7 @@ function changeLanguage(lang) {
 				}
 			});
 
+			// Update placeholders
 			document
 				.querySelectorAll('[data-translate-placeholder]')
 				.forEach((el) => {
@@ -19,6 +21,7 @@ function changeLanguage(lang) {
 					}
 				});
 
+			// Update buttons
 			document.querySelectorAll('[data-translate-button]').forEach((el) => {
 				const key = el.getAttribute('data-translate-button');
 				if (data[key]) {
