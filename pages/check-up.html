@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>Porto Nexus | Contact us</title>
+		<title>Porto Nexus | Brand Check-up</title>
 
 		<!-- Meta Description -->
 		<meta
@@ -30,11 +30,6 @@
 			rel="stylesheet"
 			type="text/css"
 		/>
-		<!-- Toastify  -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
-		/>
 
 		<!-- Contact us Form  -->
 		<script
@@ -43,9 +38,15 @@
 		></script>
 		<script type="text/javascript">
 			(function () {
-				emailjs.init('KL3Y97cA9lA1n5_Yt');
+				emailjs.init('gcw-XTIN49NfZ1E2-');
 			})();
 		</script>
+
+		<!-- Toastify  -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+		/>
 
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" />
@@ -197,14 +198,14 @@
 											class="text-color-primary active"
 											data-translate="breadcrumb_contact_us"
 										>
-											CONTACT US
+											Brand Check-up
 										</li>
 									</ul>
 									<h1
 										class="text-color-light font-weight-bold text-10"
 										data-translate="contact_us_heading"
 									>
-										Contact Us
+										Brand Check-up
 									</h1>
 								</div>
 							</div>
@@ -248,49 +249,9 @@
 					<div
 						class="container custom-padding-top-1 custom-padding-bottom-1 px-lg-5 bg-light"
 					>
-						<div class="row px-lg-3 pb-2 mb-5">
-							<div
-								class="col-lg-6 mb-4 mb-lg-0 appear-animation"
-								data-appear-animation="fadeInUpShorterPlus"
-								data-appear-animation-delay="0"
-							>
-								<div class="row">
-									<div class="col-auto">
-										<h3
-											class="d-block text-color-grey positive-ls-3 font-weight-medium text-2 mb-1"
-											data-translate="send_email_label"
-										>
-											SEND AN EMAIL
-										</h3>
-										<a
-											href="mailto:contact@portonexus.com"
-											class="d-flex align-items-center text-decoration-none text-color-dark text-color-hover-primary font-weight-bold text-3-5"
-										>
-											contact@portonexus.com
-										</a>
-									</div>
-								</div>
-							</div>
-							<div
-								class="col-lg-6 appear-animation"
-								data-appear-animation="fadeInUpShorterPlus"
-								data-appear-animation-delay="1600"
-							>
-								<h3
-									class="d-block text-color-grey positive-ls-3 font-weight-medium text-2 mb-1"
-									data-translate="book_call_label"
-								>
-									Book a call
-								</h3>
-								<span
-									class="d-flex align-items-center text-color-dark font-weight-bold text-3-5"
-									data-translate="book_call_info"
-								>
-									Choose an available slot to schedule a call with us
-								</span>
-							</div>
-						</div>
+						<div class="row px-lg-3 pb-2 mb-5"></div>
 						<div class="row px-lg-3">
+							<div class="col-lg-3 mb-4 mb-lg-0"></div>
 							<div
 								class="col-lg-6 mb-4 mb-lg-0 appear-animation"
 								data-appear-animation="fadeInUpShorterPlus"
@@ -316,7 +277,19 @@
 												maxlength="100"
 												class="form-control text-3 h-auto py-3-5"
 												name="name"
-												placeholder="Your Name"
+												placeholder="Your Name*"
+												required
+											/>
+										</div>
+										<div class="form-group col mb-3-5">
+											<input
+												type="text"
+												value=""
+												data-msg-required="Please enter your Business name."
+												maxlength="100"
+												class="form-control text-3 h-auto py-3-5"
+												name="company"
+												placeholder="Your Business Name*"
 												required
 											/>
 										</div>
@@ -331,8 +304,18 @@
 												maxlength="100"
 												class="form-control text-3 h-auto py-3-5"
 												name="email"
-												placeholder="Your E-mail Address"
+												placeholder="Your E-mail*"
 												required
+											/>
+										</div>
+										<div class="form-group col mb-3-5">
+											<input
+												type="text"
+												value=""
+												maxlength="100"
+												class="form-control text-3 h-auto py-3-5"
+												name="location"
+												placeholder="Your Location"
 											/>
 										</div>
 									</div>
@@ -341,61 +324,71 @@
 											<input
 												type="text"
 												value=""
-												data-msg-required="Please enter the subject."
 												maxlength="100"
 												class="form-control text-3 h-auto py-3-5"
-												name="subject"
-												placeholder="Subject"
-												required
+												name="website"
+												placeholder="Your Website (if you have one)"
+											/>
+										</div>
+										<div class="form-group col mb-3-5">
+											<input
+												type="text"
+												value=""
+												maxlength="100"
+												class="form-control text-3 h-auto py-3-5"
+												name="instagram"
+												placeholder="Your Instagram (if you have one)"
+											/>
+										</div>
+									</div>
+									<div class="row">
+										<div class="form-group col mb-3-5">
+											<input
+												type="text"
+												value=""
+												maxlength="100"
+												class="form-control text-3 h-auto py-3-5"
+												name="facebook"
+												placeholder="Your Facebook (if you have one)"
+											/>
+										</div>
+										<div class="form-group col mb-3-5">
+											<input
+												type="text"
+												value=""
+												maxlength="100"
+												class="form-control text-3 h-auto py-3-5"
+												name="tiktok"
+												placeholder="Your Tiktok (if you have one)"
 											/>
 										</div>
 									</div>
 									<div class="row">
 										<div class="form-group col mb-3-5">
 											<textarea
-												maxlength="5000"
-												data-msg-required="Please enter your message."
+												maxlength="2000"
 												rows="8"
 												class="form-control text-3 h-auto py-3-5"
-												name="message"
-												placeholder="Message"
-												required
+												name="notes"
+												placeholder="Notes"
 											></textarea>
 										</div>
 									</div>
 									<div class="row">
-										<div class="form-group col-lg-6 col">
+										<div class="form-group col-lg-12 col">
 											<button
 												type="submit"
-												class="btn btn-modern btn-dark w-100 font-weight-semibold text-capitalize text-3 py-3 anim-hover-translate-top-5px transition-2ms mb-5 mb-lg-0"
+												class="btn btn-primary font-weight-semibold text-3 py-lg-3 btn-gradient text-quaternary anim-hover-translate-top-5px transition-2ms w-100"
 											>
 												<span class="px-4 d-block ws-nowrap">
-													Send Message
-													<i class="fas fa-arrow-right rotate-l-45 ms-2"></i>
+													Get Free Brand Check-up
 												</span>
 											</button>
 										</div>
 									</div>
 								</form>
 							</div>
-							<div
-								class="col-lg-6 mb-4 mb-lg-0 appear-animation"
-								data-appear-animation="fadeInUpShorterPlus"
-								data-appear-animation-delay="300"
-							>
-								<!-- Calendly inline widget begin -->
-								<div
-									class="calendly-inline-widget"
-									data-url="https://calendly.com/marouenabdi95/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=171718"
-									style="min-width: 320px; height: 700px"
-								></div>
-								<script
-									type="text/javascript"
-									src="https://assets.calendly.com/assets/external/widget.js"
-									async
-								></script>
-								<!-- Calendly inline widget end -->
-							</div>
+							<div class="col-lg-3 mb-4 mb-lg-0"></div>
 						</div>
 					</div>
 				</div>
@@ -407,7 +400,7 @@
 					<div class="row pt-5">
 						<div class="col-lg-6 mt-5 pt-3" style="z-index: 1">
 							<div class="logo-text pb-5">
-								<a href="/index.html">
+								<a href="../index.html">
 									<h1 data-translate="footer_site_name">Porto Nexus</h1>
 								</a>
 							</div>
@@ -574,11 +567,11 @@
 					event.preventDefault();
 
 					// Send the email using EmailJS
-					emailjs.sendForm('service_x0av51k', 'template_z7ysvhy', this).then(
+					emailjs.sendForm('service_8i01g6k', 'template_ihc2p1o', this).then(
 						function (response) {
 							// Show success notification with Toastify
 							Toastify({
-								text: 'Your message has been sent successfully! We will get back to you Asap',
+								text: 'Your request has been sent successfully! We will get back to you ASAP',
 								duration: 3000, // Notification will disappear after 3 seconds
 								close: true, // Show a close button
 								gravity: 'top', // Position at the top
@@ -590,7 +583,7 @@
 						function (error) {
 							// Show error notification with Toastify
 							Toastify({
-								text: 'Failed to send the message. Please try again.',
+								text: 'Failed to send the request. Please try again.',
 								duration: 3000, // Notification will disappear after 3 seconds
 								close: true, // Show a close button
 								gravity: 'top', // Position at the top
