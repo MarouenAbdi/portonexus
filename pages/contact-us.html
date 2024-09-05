@@ -622,48 +622,7 @@
 		</script>
 
 		<!-- Translation Script -->
-		<script>
-			document.addEventListener('DOMContentLoaded', () => {
-				const defaultLang = 'en';
-				const userLang = navigator.language || navigator.userLanguage;
-				const lang = userLang.startsWith('fr')
-					? 'fr'
-					: userLang.startsWith('pt')
-					? 'pt'
-					: defaultLang;
-
-				const langButtons = {
-					en: document.getElementById('lang-en'),
-					fr: document.getElementById('lang-fr'),
-					pt: document.getElementById('lang-pt'),
-				};
-
-				function setLanguage(lang) {
-					document.querySelectorAll('[data-lang-en]').forEach((element) => {
-						element.textContent = element.getAttribute(`data-lang-${lang}`);
-					});
-
-					for (let key in langButtons) {
-						if (key === lang) {
-							langButtons[key].classList.add('disabled');
-							langButtons[key].setAttribute('disabled', 'disabled');
-						} else {
-							langButtons[key].classList.remove('disabled');
-							langButtons[key].removeAttribute('disabled');
-						}
-					}
-				}
-
-				changeLanguage(lang);
-
-				setLanguage(lang);
-
-				langButtons['en'].addEventListener('click', () => setLanguage('en'));
-				langButtons['fr'].addEventListener('click', () => setLanguage('fr'));
-				langButtons['pt'].addEventListener('click', () => setLanguage('pt'));
-			});
-		</script>
-
+		<script src="../js/translation/translation.js"></script>
 		<script src="../js/translation/translate.js"></script>
 
 		<!-- Toastify JS -->

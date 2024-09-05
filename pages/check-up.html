@@ -564,17 +564,18 @@
 			</footer>
 		</div>
 
-		<!-- Contact us Form -->
+		<!-- Check up Form -->
 		<script type="text/javascript">
 			document
 				.getElementById('contact-form')
 				.addEventListener('submit', function (event) {
 					event.preventDefault();
 
-					const lang = (navigator.language || navigator.userLanguage).substring(
-						0,
-						2
-					);
+					// Get selected language from localStorage, or fallback to system language
+					const lang =
+						localStorage.getItem('selectedLang') ||
+						(navigator.language || navigator.userLanguage).substring(0, 2);
+
 					fetch(`/js/translation/${lang}.json`)
 						.then((response) => response.json())
 						.then((data) => {
@@ -611,47 +612,7 @@
 		</script>
 
 		<!-- Translation Script -->
-		<script>
-			document.addEventListener('DOMContentLoaded', () => {
-				const defaultLang = 'en';
-				const userLang = (
-					navigator.language || navigator.userLanguage
-				).substring(0, 2);
-
-				const lang = userLang.startsWith('fr')
-					? 'fr'
-					: userLang.startsWith('pt')
-					? 'pt'
-					: defaultLang;
-
-				const langButtons = {
-					en: document.getElementById('lang-en'),
-					fr: document.getElementById('lang-fr'),
-					pt: document.getElementById('lang-pt'),
-				};
-
-				function setLanguage(lang) {
-					for (let key in langButtons) {
-						if (key === lang) {
-							langButtons[key].classList.add('disabled');
-							langButtons[key].setAttribute('disabled', 'disabled');
-						} else {
-							langButtons[key].classList.remove('disabled');
-							langButtons[key].removeAttribute('disabled');
-						}
-					}
-				}
-
-				changeLanguage(lang);
-
-				setLanguage(lang);
-
-				langButtons['en'].addEventListener('click', () => setLanguage('en'));
-				langButtons['fr'].addEventListener('click', () => setLanguage('fr'));
-				langButtons['pt'].addEventListener('click', () => setLanguage('pt'));
-			});
-		</script>
-
+		<script src="../js/translation/translation.js"></script>
 		<script src="../js/translation/translate.js"></script>
 
 		<!-- Toastify JS -->
