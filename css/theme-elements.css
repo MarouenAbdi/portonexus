@@ -22483,7 +22483,7 @@ ul.history li .featured-box .box-content {
 	height: 8px;
 	backface-visibility: hidden;
 	transition: transform 0.3s, top 0.3s;
-	transform: rotate(-45deg) translate3d(0, -50%, 0);
+	transform: rotate(135deg) translate3d(0, -50%, 0);
 	transform-origin: 35%;
 }
 
@@ -22537,7 +22537,7 @@ ul.history li .featured-box .box-content {
 .toggle.active > label:before,
 .toggle.active > .toggle-title:before {
 	top: calc(50% - 8px);
-	transform: rotate(135deg);
+	transform: rotate(-45deg);
 }
 
 .toggle.active > p {

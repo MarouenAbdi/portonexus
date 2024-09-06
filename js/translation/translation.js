@@ -46,11 +46,9 @@ function setLanguage(lang) {
 
 	for (let key in langButtons) {
 		if (key === lang) {
-			langButtons[key].classList.add('disabled');
-			langButtons[key].setAttribute('disabled', 'disabled');
+			langButtons[key].classList.add('selected');
 		} else {
-			langButtons[key].classList.remove('disabled');
-			langButtons[key].removeAttribute('disabled');
+			langButtons[key].classList.remove('selected');
 		}
 	}
 	changeLanguage(lang); // Update the language content on the page

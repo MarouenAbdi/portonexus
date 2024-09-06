@@ -19587,9 +19587,8 @@ html.gap-outside
 	background: none;
 	cursor: pointer;
 	outline: none;
-}
-.lang-button:disabled {
-	cursor: not-allowed;
+	opacity: 0.4;
+	transition: opacity 0.3s;
 }
 
 .flag-icon {
@@ -19599,9 +19598,8 @@ html.gap-outside
 	margin-right: 8px;
 }
 
-.disabled {
-	pointer-events: block;
-	opacity: 0.3;
+.lang-button.selected {
+	opacity: 1;
 }
 
 .barsa-list4 {
