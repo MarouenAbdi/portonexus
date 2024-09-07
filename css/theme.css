@@ -331,6 +331,22 @@ li {
 	object-fit: cover;
 }
 
+.earth-image {
+	animation: pulseEffect 20s ease-in-out infinite;
+}
+
+@keyframes pulseEffect {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 .logo-style {
 	display: flex;
 	flex-direction: column;
